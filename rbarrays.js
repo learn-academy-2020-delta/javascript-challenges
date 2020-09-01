@@ -37,3 +37,35 @@ console.log(numbers)
 console.log(numbers)
 var newNum = [0]
 console.log(numbers.concat(newNum))
+
+
+/*
+  var numSet = [2, 13, 6, 8, 4, 2]
+Write the code that finds the index of the first appearance of the number 2.
+
+Write the code that finds the index of the last appearance of the number 2.
+
+ var chars = ["y", "a", "r", "r", "a"]
+Write the code that brings all the letters in the chars array together into a string.
+
+Write the code that reverses the order of the letters in the chars array and saves it into a variable called charsReversed.
+
+Write the code that brings all the letters in the charsReversed array together into a string with a hyphen between each letter.
+
+Write the code that brings all the letters in the charsReversed Array together into a string without separators.*/
+
+var numSet = [2, 13, 6, 8, 4, 2]
+console.log(numSet.indexOf(2))
+console.log(numSet.lastIndexOf(2))
+
+
+
+var chars = ["y", "a", "r", "r", "a"]
+console.log(chars.join(" "))
+
+var charsReversed = chars.reverse()
+console.log(charsReversed)
+
+console.log(charsReversed.join("-"))
+
+console.log(charsReversed.join(""))
