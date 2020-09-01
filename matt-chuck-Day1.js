@@ -22,5 +22,9 @@ console.log("LEARN".length === 5 || "Student".length === 10);
 //Variable Challenges
 var favNum = 7;
 var otherNum = 13;
+var string = "Why is git so annoying for us.";
+
 console.log(favNum / 2);
 console.log(favNum / otherNum); 
+console.log(string.length);
+console.log(string.charAt(3));
