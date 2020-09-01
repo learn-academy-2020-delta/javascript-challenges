@@ -38,9 +38,42 @@
 //   console.log("Within budget!")
 //}
 
-var hungry = true
-if(hungry === true){
-    console.log("go eat food")
+// var hungry = true
+// if(hungry === true){
+//     console.log("go eat food")
+// } else {
+//     console.log("go ahead and keep coding")
+// }
+
+// var trafficLight = "green"
+// trafficLight = "yellow"
+// trafficLight = "red"
+
+// if(trafficLight === "green") {
+//     console.log("Go!")
+// } else if(trafficLight === "yellow"){
+//     console.log("Slow down!")
+// } else {
+//     console.log("STOP!")
+// }
+
+// var num1 = 91
+// var num2 = 9
+
+// if(num1 < num2){
+//     console.log(num2)
+// } else if(num1 === num2){
+//     console.log("Equal!")
+// } else {
+//     console.log("Error")
+// }
+
+var num = 0
+if(num % 2 === 0){
+    console.log("even")
+} else if(num == 0){
+    console.log("zero")
 } else {
-    console.log("go ahead and keep coding")
+    console.log("odd")
 }
+
