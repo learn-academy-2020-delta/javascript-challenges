@@ -12,3 +12,15 @@
 //console.log("David".length);
 //console.log("Joel".charAt(2));
 
+//Booleans
+//console.log(34 / 3 > 67 / 2);
+//console.log(5 == "5");
+//console.log(5 === "5");
+//console.log(!3 === 3);
+//console.log("LEARN".length === 5 && "student".length === 7);
+//console.log("LEARN".length === 5 || "student".length === 10);
+
+//Variables
+var favNum = 7
+console.log(favNum / 2);
+var otherNum = 13
