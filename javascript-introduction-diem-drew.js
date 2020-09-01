@@ -46,12 +46,14 @@ if (price <= 100){
 } else {
   console.log("out of budget");
 }
+
 var hungry = true;
 if (hungry === true){
   console.log("Eat food");
 } else {
   console.log("Keep coding");
 }
+
 var trafficLight = "yellow";
 if (trafficLight === "green"){
   console.log("Go!");
@@ -62,6 +64,7 @@ if (trafficLight === "green"){
 } else{
   console.log("Error!");
 }
+
 var num1 = 0, num2 = 1;
 if (num1 > num2){
   console.log(num1);
@@ -72,6 +75,7 @@ if (num1 > num2){
 } else{
   console.log("You did it wrong! Redo it!");
 }
+
 var number = 27;
 if (number === 0){
   console.log("It's zero");
@@ -81,4 +85,47 @@ if (number === 0){
   console.log("It's even");
 } else{
   console.log("Input error, please enter a number");
+}
+
+// Stretch Challenges
+console.log("Stretch Challenge answers");
+
+var gradePercentage = 40
+if(gradePercentage === 100){
+  console.log("Perfect Score!!");
+} else if(gradePercentage === 0){
+  console.log("No grade available");
+} else if(gradePercentage <= 99 && gradePercentage >= 90){
+  console.log("You got an A!");
+} else if(gradePercentage <= 89 && gradePercentage >= 80){
+  console.log("You got an B!");
+} else if(gradePercentage <= 79 && gradePercentage >= 70){
+  console.log("You got an C!");
+} else if(gradePercentage <= 69 && gradePercentage >= 60){
+  console.log("You got an D!");
+} else if(gradePercentage <= 59){
+  console.log("You got an F!");
+} else {
+  console.log("Input Error");
+}
+
+
+var data = true;
+if(typeof data === "string"){
+  console.log("string");
+} else if(typeof data === "boolean"){
+  console.log("boolean");
+} else if(typeof data === "number"){
+  console.log("number");
+} else {
+  console.log("Input Error");
+}
+
+var password = "heavypineapple"
+if(password.length >= 12 && password.includes("!")){
+  console.log("This is a mighty strong password");
+} else if(password.length >= 8 || password.includes("!")){
+  console.log("This password is strong enough");
+} else {
+  console.log("That is not a VALID password");
 }
