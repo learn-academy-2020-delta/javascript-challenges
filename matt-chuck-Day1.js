@@ -25,6 +25,31 @@ var otherNum = 13;
 var string = "Why is git so annoying for us.";
 
 console.log(favNum / 2);
-console.log(favNum / otherNum); 
+console.log(favNum / otherNum);
 console.log(string.length);
 console.log(string.charAt(3));
+
+// Conditional Challenges
+var item = 50;
+if(item <= 100)
+{
+  console.log("In budget")
+} else {
+  console.log("Not in Budget!")
+};
+
+var hungry = true;
+if (hungry === true){
+  console.log("Eat food!")
+} else {
+  console.log("Keep coding!")
+};
+
+var trafficLight = "red";
+if (trafficLight === "green") {
+  console.log("go")
+} else if (trafficLight === "yellow") {
+  console.log("slow down!")
+} else {
+  console.log("stop")
+};
