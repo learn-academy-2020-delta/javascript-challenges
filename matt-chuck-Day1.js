@@ -23,4 +23,4 @@ console.log("LEARN".length === 5 || "Student".length === 10);
 var favNum = 7;
 var otherNum = 13;
 console.log(favNum / 2);
-console.log(favNum / otherNum);
+console.log(favNum / otherNum); 
