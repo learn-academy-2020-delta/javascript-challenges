@@ -76,12 +76,40 @@
 // }
 
 
-var num = 1
-if(num === 0){
-    console.log("zero")
-} else if(num % 2 === 0){
-    console.log("even")
-} else {
-    console.log("odd")
-}
+// var num = 1
+// if(num === 0){
+//     console.log("zero")
+// } else if(num % 2 === 0){
+//     console.log("even")
+// } else {
+//     console.log("odd")
+// }
 
+
+//Arrays
+// var groceryList = ["chips", "dip", "cookies"]
+// groceryList.push("soda")
+// console.log(groceryList)
+// groceryList.push("granola")
+// console.log(groceryList)
+
+
+// var numbers = [2, 4, 6, 8, 10]
+// var numbers2 = [0]
+// numbers.unshift(0)
+// //console.log(numbers)
+// numbers.push(12)
+// //console.log(numbers)
+// numbers.shift()
+// //console.log(numbers)
+// console.log(numbers2.concat(numbers))
+
+
+// var numSet = [2, 13, 6, 8, 4, 2]
+// console.log(numSet.indexOf(2))
+// console.log(numSet.lastIndexOf(2))
+
+
+var chars = ["y", "a", "r", "r", "a"]
+console.log(chars.join(""))
+console.log(chars.reverse())
