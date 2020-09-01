@@ -37,3 +37,48 @@ console.log(favNum / otherNum);
 var string = "Heyyy There!";
 console.log(string.length);
 console.log(string.charAt(3));
+
+// Conditional Challenges
+console.log("Conditional Challenges Answers")
+var items = 0, price = 0;
+if (price <= 100){
+  console.log("in budget");
+} else {
+  console.log("out of budget");
+}
+var hungry = true;
+if (hungry === true){
+  console.log("Eat food");
+} else {
+  console.log("Keep coding");
+}
+var trafficLight = "yellow";
+if (trafficLight === "green"){
+  console.log("Go!");
+} else if (trafficLight === "yellow"){
+  console.log("Slow down!");
+} else if (trafficLight === "red"){
+  console.log("Stop!");
+} else{
+  console.log("Error!");
+}
+var num1 = 0, num2 = 1;
+if (num1 > num2){
+  console.log(num1);
+} else if (num1 < num2){
+  console.log(num2);
+} else if (num1 === num2){
+  console.log("They're equal")
+} else{
+  console.log("You did it wrong! Redo it!");
+}
+var number = 27;
+if (number === 0){
+  console.log("It's zero");
+} else if (number%2 === 1){
+  console.log("It's odd");
+} else if (number%2 === 0){
+  console.log("It's even");
+} else{
+  console.log("Input error, please enter a number");
+}
