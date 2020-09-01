@@ -129,3 +129,43 @@ if(password.length >= 12 && password.includes("!")){
 } else {
   console.log("That is not a VALID password");
 }
+
+// Array Challenges
+var groceryList = ["chips", "dip", "cookies"];
+groceryList.push("soda");
+console.log(groceryList);
+
+var groceryList2 = ["granola"];
+console.log("Original array", groceryList);
+console.log("New array", groceryList.concat(groceryList2));
+
+var numbers = [2, 4, 6, 8, 10];
+numbers.unshift(0);
+console.log(numbers);
+numbers.push(12);
+console.log(numbers);
+numbers.shift();
+console.log(numbers);
+var numbers2 = [0];
+console.log("Original array", numbers);
+console.log("New array", numbers.concat(numbers2));
+
+var numSet = [2, 13, 6, 8, 4, 2];
+console.log(numSet.indexOf(2));
+console.log(numSet.lastIndexOf(2));
+
+var chars = ["y", "a", "r", "r", "a"]
+console.log(chars.join(""));
+console.log(chars.reverse());
+console.log(chars.join("-"));
+console.log(chars.join(""));
+
+var delta = ["Drew", "Diem", "Brian"];
+var delta2 = ["Bach", "Nathan", "Joel"];
+
+console.log(delta.sort());
+console.log(delta.reverse());
+// delta.sort(delta.concat(delta2));
+// console.log(delta);
+var delta3 = delta.concat(delta2);
+console.log(delta3.sort());
