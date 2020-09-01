@@ -23,3 +23,17 @@ console.log(5 === "5");
 console.log(!3 === 3);
 console.log("LEARN".length === 5 && "Student".length === 7);
 console.log("LEARN".length === 5 || "Student".length === 10);
+
+// Variables
+console.log("Variable answers");
+
+var favNum = 5;
+console.log(favNum);
+console.log(favNum / 2);
+
+var otherNum = 13;
+console.log(favNum / otherNum);
+
+var string = "Heyyy There!";
+console.log(string.length);
+console.log(string.charAt(3));
