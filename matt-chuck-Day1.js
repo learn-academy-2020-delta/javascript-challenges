@@ -4,3 +4,7 @@ console.log(56 * 23);
 console.log(45 / 5);
 console.log(5 ** 7);
 console.log(33 % 6);
+
+var name = "ChuckMatt"
+console.log(name.length);
+console.log(name.includes("e"));
