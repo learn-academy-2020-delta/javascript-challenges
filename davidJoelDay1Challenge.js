@@ -110,6 +110,19 @@
 // console.log(numSet.lastIndexOf(2))
 
 
-var chars = ["y", "a", "r", "r", "a"]
-console.log(chars.join(""))
-console.log(chars.reverse())
+// var chars = ["y", "a", "r", "r", "a"]
+// console.log(chars.join(""))
+// var charsReversed = chars.reverse()
+// console.log(charsReversed)
+// console.log(charsReversed.join("-"))
+// console.log(charsReversed.join(""))
+
+
+// var delta1 = ["Joel", "David", "Ryan"]
+// var delta2 = ["Nathan", "Brian", "Matt"]
+
+// console.log(delta1.sort())
+// console.log(delta2.sort())
+// var deltaCombine = delta1.concat(delta2)
+// deltaCombine.sort()
+// console.log(deltaCombine)
