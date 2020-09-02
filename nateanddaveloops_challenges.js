@@ -40,19 +40,50 @@
 //   console.log(array[i] % 2);
 // }
 
+// //#3
+// //.split makes each letter into it's own value
+// var myString = "learn student"
+// var myArray = myString.split("")
+// var numbE = 0
+
+// console.log(myArray);
+
+// for (let i = 0; i < myArray.length; i++) {
+//   if (myArray[i] === "e") {
+//     numbE++
+//   }
+// //3 variables, 1 makes the string, 2 makes it into and array and turns each letter into and index making into it's own value, 3 start at 0 (1st index)
+
+// //++ moves computer to check each index by 1
+// }console.log(numbE);
+
+
+//Functions
+//#1
+// const marco = () => {
+//   return "polo"
+// }
+// console.log(marco());
+
+//#2
+// const greeting = (name) => {
+//   return `welcome ${name}!`
+// }
+// console.log(greeting("nathan"));
+
 //#3
-//.split makes each letter into it's own value
-var myString = "learn student"
-var myArray = myString.split("")
-var numbE = 0
+// const oddOrEven = (num) => {
+//   if(num % 2 === 0){
+//     return `Number is even`
+//   }
+//   else {
+//     return `Number is odd`
+//   }
+// }
+// console.log(oddOrEven(2));
 
-console.log(myArray);
-
-for (let i = 0; i < myArray.length; i++) {
-  if (myArray[i] === "e") {
-    numbE++
-  }
-//3 variables, 1 makes the string, 2 makes it into and array and turns each letter into and index making into it's own value, 3 start at 0 (1st index)
-
-//++ moves computer to check each index by 1
-}console.log(numbE);
+//#4
+const triple = (num) => {
+  return num * 3
+}
+console.log(triple(3))
