@@ -65,3 +65,28 @@
 //     console.log(i);
 //   }
 // }
+// const marco = () => {
+//   return "Polo!"
+// }
+//
+// console.log(marco());
+// const greeting = (name) => {
+//   return `Welcome ${name}!`
+// }
+//
+// console.log(greeting("Chuck"));
+//
+// const oddOrEven = (number) => {
+//   if (number % 2 === 0) {
+//     return "Even!"
+//   } else {
+//     return "Odd!"
+//   }
+// }
+//
+// // console.log(oddOrEven(21));
+// const triple = (num) => {
+//   return num * 3
+// }
+//
+// console.log(triple(6));
