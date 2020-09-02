@@ -128,21 +128,36 @@
 // }
 // console.log(divisibleBy(10, 5));
 
-//const assignedGrade that takes score as an argument
-const assignedGrade = (score) => {
-  //returns the letter grade for the score
-  if (score >= 90 && score <= 100){
-    return `Your score of ${ score } earned you an A!`;
-  } else if (score >= 80 && score <= 89){
-    return `Your score of ${ score } earned you an B!`;
-  } else if (score >= 70 && score <= 79){
-    return `Your score of ${ score } earned you an C!`;
-  } else if (score >= 60 && score <= 69){
-    return `Your score of ${ score } earned you an D!`;
-  } else if (score <= 59){
-    return `Your score of ${ score } earned you an F!`;
-  } else {
-    return "Your test hasn't been graded";
-  }
+// //const assignedGrade that takes score as an argument
+// const assignedGrade = (score) => {
+//   //returns the letter grade for the score
+//   if (score >= 90 && score <= 100){
+//     return `Your score of ${ score } earned you an A!`;
+//   } else if (score >= 80 && score <= 89){
+//     return `Your score of ${ score } earned you an B!`;
+//   } else if (score >= 70 && score <= 79){
+//     return `Your score of ${ score } earned you an C!`;
+//   } else if (score >= 60 && score <= 69){
+//     return `Your score of ${ score } earned you an D!`;
+//   } else if (score <= 59){
+//     return `Your score of ${ score } earned you an F!`;
+//   } else {
+//     return "Your test hasn't been graded";
+//   }
+// }
+// console.log(assignedGrade(60));
+
+// function loops and array challenges
+var testArr1 = [3, 9, 15, 4, 10]
+// const myArray takes in an array
+const newArray = (array) => {
+// returns a new array all mulitplied by 3
+    let arrayTimes3 = [];
+    for(let i = 0; i < array.length; i++) {
+        arrayTimes3.push((array[i]) * 3);
+    }
+    return arrayTimes3;
 }
-console.log(assignedGrade(60));
+console.log(newArray(testArr1));
+
+
