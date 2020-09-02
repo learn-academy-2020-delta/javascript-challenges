@@ -39,10 +39,33 @@
 //   console.log(nums[i] % 2);
 // }
 
-var myString = "learn student";
-var numE = 0;
-for(let i = 0; i < myString.length; i++) {
-    if(myString.charAt(i) === "e")
-    numE++;
+//Looping over a string
+// var myString = "learn student";
+// var numE = 0;
+// for(let i = 0; i < myString.length; i++) {
+//     if(myString.charAt(i) === "e")
+//     numE++;
+// }
+// console.log(numE);
+
+//Stretch Challenge Even or Odd
+// for (i = 0; i < 15 ; i++){
+//   if (i % 2 === 0){
+//     console.log(i + " is even");
+//   } else {
+//     console.log(i + " is odd");
+//   }
+// }
+
+//Stretch Challenge Fizz Buzz
+for (i = 1; i < 101 ; i++){
+  if ((i % 3 === 0) && (i % 5 === 0)){
+    console.log("fizzbuzz");
+  } else if(i % 3 === 0 && i % 5 !== 0){
+    console.log("fizz");
+  } else if (i % 5 === 0 && i % 3 !== 0){
+    console.log("buzz");
+  } else{
+    console.log(i);
+  }
 }
-console.log(numE);
