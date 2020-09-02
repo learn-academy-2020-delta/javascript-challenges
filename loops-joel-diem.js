@@ -58,13 +58,13 @@
 // }
 
 //Stretch Challenge Fizz Buzz
-<<<<<<< HEAD
+// <<<<<<< HEAD
 // for (i = 1; i < 101 ; i++){
 //   if ((i % 3 === 0) && (i % 5 === 0)){
 //     console.log("fizzbuzz");
-//   } else if(i % 3 === 0 && i % 5 !== 0){
+//   } else if(i % 3 === 0){
 //     console.log("fizz");
-//   } else if (i % 5 === 0 && i % 3 !== 0){
+//   } else if (i % 5 === 0){
 //     console.log("buzz");
 //   } else{
 //     console.log(i);
@@ -72,7 +72,7 @@
 // }
 
 //Function Challenges
-// declare const function called marco 
+// declare const function called marco
 // const marco = () => {
 //     // returns polo
 //     return "polo";
@@ -98,17 +98,51 @@
 //         return "Please input number"
 //     }
 // }
-// console.log(oddOrEven("Joel"));
-=======
-for (let i = 1; i < 101 ; i++){
-  if ((i % 3 === 0) && (i % 5 === 0)){
-    console.log("fizzbuzz");
-  } else if(i % 3 === 0) {
-    console.log("fizz");
-  } else if (i % 5 === 0){
-    console.log("buzz");
-  } else{
-    console.log(i);
+
+// const funct named triple that takes a number as an argument
+// const triple = (number) =>{
+//   // returns the result of that number multplied by 3
+// return (number * 3);
+// }
+// console.log(triple(7));
+
+//const multply that takes num1, num2 as arguments
+// const multiply = (num1, num2) => {
+// //returns the result of num1 * num2
+//   return (num1 * num2);
+// }
+// console.log(multiply(3,8));
+
+//const divisibleBy that takes arguments num1, num2
+// const divisibleBy = (num1, num2) =>{
+// // returns whether num1 is evenly divisible by num2
+//   if (typeof num1 === "number" && typeof num2 === "number"){
+//     if (num1 % num2 === 0){
+//       return `${ num1 } is evenly divisible by ${ num2 }`;
+//     } else if (num1 % num2 !== 0){
+//       return `${ num1 } is NOT evenly divisible by ${ num2 }`;
+//   }
+//   } else {
+//     return "There has been an input error";
+//   }
+// }
+// console.log(divisibleBy(10, 5));
+
+//const assignedGrade that takes score as an argument
+const assignedGrade = (score) => {
+  //returns the letter grade for the score
+  if (score >= 90 && score <= 100){
+    return `Your score of ${ score } earned you an A!`;
+  } else if (score >= 80 && score <= 89){
+    return `Your score of ${ score } earned you an B!`;
+  } else if (score >= 70 && score <= 79){
+    return `Your score of ${ score } earned you an C!`;
+  } else if (score >= 60 && score <= 69){
+    return `Your score of ${ score } earned you an D!`;
+  } else if (score <= 59){
+    return `Your score of ${ score } earned you an F!`;
+  } else {
+    return "Your test hasn't been graded";
   }
 }
->>>>>>> a9605bbdf16af4ab4bd03815efc7a705459cd5a5
+console.log(assignedGrade(60));
