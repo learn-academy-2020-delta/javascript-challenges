@@ -83,7 +83,8 @@
 // console.log(oddOrEven(2));
 
 //#4
-const triple = (num) => {
-  return num * 3
-}
-console.log(triple(3))
+// const triple = (num) => {
+//   return num * 3
+// }
+// console.log(triple(3))
+
