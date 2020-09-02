@@ -110,18 +110,31 @@
 
 //#7
 
-const assignGrade = (score) => {
-  if(score >= 90 && score <= 100) {
-    return "You got an A!"
-}else if (score >= 80 && score <= 89) {
-    return "You got a B!"
-}else if (score >= 70 && score <= 79) {
-    return "You got a C!"
-}else if (score >= 60 && score <= 69) {
-    return "You got a D!"
-}else {
-  return "Ouch..."
-}
-}
+// const assignGrade = (score) => {
+//   if(score >= 90 && score <= 100) {
+//     return "You got an A!"
+// }else if (score >= 80 && score <= 89) {
+//     return "You got a B!"
+// }else if (score >= 70 && score <= 79) {
+//     return "You got a C!"
+// }else if (score >= 60 && score <= 69) {
+//     return "You got a D!"
+// }else {
+//   return "Ouch..."
+// }
+// }
 
-console.log(assignGrade(75));
+// console.log(assignGrade(75));
+
+
+//FUNCTIONS, LOOPS, ARRAYS
+var testArr1 = [3, 9, 15, 4, 10]
+const multiplier = (array) => {
+  let arrayMult = []
+  for(let i = 0; i < array.length; i++){
+    arrayMult.push(array[i] * 3) 
+  }
+  return arrayMult
+}
+console.log(multiplier(testArr1));
+
