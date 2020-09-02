@@ -93,3 +93,73 @@ const assignGrade = (num) => {
 
 // Test
 console.log(assignGrade(45));
+
+
+
+//What number's bigger: Write a function named greaterNum that takes 2 arguments, both numbers and returns whichever number is the greater (higher) number
+console.log("\ngreater number;")
+const greaterNum = (num1, num2) => {
+  if(num1 > num2){
+    return `${num1} is greater than ${num2}`
+  }
+  else if(num1 < num2){
+    return `${num2} is greather than ${num1}`
+  }
+  else if(num1 === num2){
+    return `${num1} is equal to ${num2}`
+  }
+  else {
+    return `ERROR`
+  }
+}
+console.log(greaterNum(39, 39))
+//The World Translator: Write a function named helloWorld that takes 1 argument, a language code (e.g. "es", "de", "en") and returns "Hello, World" for the given language, for at least 3 languages (it should default to returning English)
+console.log("\nThe World Translator;")
+const helloWorld = (langCode) => {
+  if(langCode === "es"){
+    return "¡Hola Mundo!"
+  }
+  else if(langCode === "de"){
+    return "Hallo Welt!"
+  }
+  else if(langCode === "fr"){
+    return "Bonjour Le Monde"
+  }
+  else {
+    return "Hello World!"
+  }
+}
+console.log(helloWorld(""))
+//The Pluralizer: Write a function named pluralizer that takes 2 arguments, a number and a singular noun and returns the number and pluralized form of the noun, if necessary
+const pluralizer = (num, noun) => {
+  if(typeof num === `number` && typeof noun === "string"){
+    if(noun === "sheep" || noun === "species" || num === 1){
+      return `${num} ${noun}`
+    }
+    else if(noun === "goose"){
+    return `${num} geese`
+  }
+    else if(noun === "child"){
+      return `${num} children`
+  }
+    else if(noun === "person"){
+      return `${num} people`
+  }
+  else if(num > 1){
+    return `${num} ${noun}s`
+  }
+  }
+  else{
+    return "DO IT AGAIN!!"
+  }
+}
+console.log(pluralizer(1, 9))
+//const pluralizer = (5, cat)
+
+//Expected outcome --> "5 cats"
+
+//const pluralizer = (1, dog)
+
+//Expected outcome --> "1 dog"
+
+//Bonus: Make it handle a few collective nouns like "sheep", "goose", "child", "person" and "species"
