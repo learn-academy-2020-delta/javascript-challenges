@@ -32,7 +32,24 @@
 // }
 //
 // console.log(lowNum);
-var nums = [3, 57, -9, 20, 67]
-for (let i = 0; i < nums.length; i++) {
-  console.log(nums[i] % 2);
+// var nums = [3, 57, -9, 20, 67]
+// for (let i = 0; i < nums.length; i++) {
+//   console.log(nums[i] % 2);
+// }
+
+// var myString = "learn student";
+// var count = 0;
+// for (let i = 0; i < myString.length; i++) {
+//   if (myString[i] === "e") {
+//     count++;
+//   }
+// }
+// console.log(count);
+
+for (let i = 0; i <= 15; i++) {
+  if (i % 2 === 0) {
+    console.log(i + " is even!");
+  } else {
+    console.log(i + " is odd!");
+  }
 }
