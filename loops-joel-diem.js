@@ -148,16 +148,55 @@
 // console.log(assignedGrade(60));
 
 // function loops and array challenges
-var testArr1 = [3, 9, 15, 4, 10]
-// const myArray takes in an array
-const newArray = (array) => {
-// returns a new array all mulitplied by 3
-    let arrayTimes3 = [];
-    for(let i = 0; i < array.length; i++) {
-        arrayTimes3.push((array[i]) * 3);
+// var testArr1 = [3, 9, 15, 4, 10]
+// // const myArray takes in an array
+// const newArray = (array) => {
+// // returns a new array all mulitplied by 3
+//     let arrayTimes3 = [];
+//     for(let i = 0; i < array.length; i++) {
+//         arrayTimes3.push((array[i]) * 3);
+//     }
+//     return arrayTimes3;
+// }
+// console.log(newArray(testArr1));
+
+// const function oddNums with argument array
+// var testArr2 = [0, 2, -7, 3, 5, 8, 10, 13]
+//
+// const oddNums = (array) =>{
+//   // returns a new array with only odd numbers
+//   let newArray = [];
+//   for (let i = 0; i < array.length; i++){
+//     if (array[i] % 2 !== 0){
+//       newArray.push(array[i]);
+//   }
+// }
+//   return newArray;
+// }
+// console.log(oddNums(testArr2));
+
+// const function with argument string
+// const capitalizer = (string) =>{
+//   let capString = string.toUpperCase();
+//   return capString;
+// }
+// // returns new string with every letter capitalized
+// var myMessage = "Hello There";
+// console.log(capitalizer(myMessage));
+
+// const function that takes in argument of array of numbers/letters
+const lettersOnly = (array) => {
+  // returns a string with only letters
+  let newArray = [];
+  for (i = 0; i < array.length; i++){
+    // typeof
+    if (typeof array[i] === "string"){
+      newArray.push(array[i]);
     }
-    return arrayTimes3;
+  }
+  let sentence = newArray.join("");
+  return sentence;
 }
-console.log(newArray(testArr1));
 
-
+var comboArr = [7 , "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
+console.log(lettersOnly(comboArr));
