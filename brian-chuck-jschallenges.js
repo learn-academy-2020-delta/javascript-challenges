@@ -90,3 +90,43 @@
 // }
 //
 // console.log(triple(6));
+
+// const multiply = (num1, num2) => {
+//   return num1 * num2;
+// }
+// console.log(multiply(6, 3));
+
+// const divisibleBy = (num1, num2) => {
+//   if (num1 % num2 === 0) {
+//     return `${num1} is evenly divisible by ${num2}.`
+//   } else {
+//     return "Not divisible!"
+//   }
+// }
+// console.log(divisibleBy(4, 3));
+//
+// //Write a function named assignGrade that takes a number score as an argument and returns the letter grade for the score
+// const assignGrade = (number) => {
+//   if (number <= 100 && number >= 0){
+//     if (number >= 90) {
+//       return "A"
+//     } else if (number >= 80) {
+//       return "B"
+//     } else if (number >= 70) {
+//       return "C"
+//     } else if (number >= 60) {
+//       return "D"
+//     } else {
+//       return "F"
+//     }
+//   } else {
+//     return "Grade not valid!"
+//   }
+// }
+// console.log(assignGrade(105));
+// console.log(assignGrade(95));
+// console.log(assignGrade(85));
+// console.log(assignGrade(75));
+// console.log(assignGrade(65));
+// console.log(assignGrade(55));
+// console.log(assignGrade(-5));
