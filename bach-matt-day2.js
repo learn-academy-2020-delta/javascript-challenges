@@ -121,6 +121,156 @@ console.log(oddOrEven("number"));
 console.log(triple(4));
 */
 
+//Write func named multiply that takes two nums as args and returns result of one of the numbers multiplied by the other
+
+// declare function names multiply
+/*const multiply = (num1, num2) => {
+    // return resutl of num1 times num2
+    return num1 * num2
+}
+console.log(multiply(5, 30)); */
+
+//Declare func named divisibleBy that takes 2 nums as args. Returns if first number is evenly divisible by the second number
+//Declare our function
+/*const divisibleBy = (num1, num2) => {
+    //If statement checking to make sure the inputs are a number
+    if(typeof num1 === "number" && typeof num2 === "number") {
+    //If statement to see if number is evenly divisible by num2
+        if(num1 % num2 === 0) {
+            return `${ num1 } is evenly divisble by ${ num2 }`
+        } else if (num1 % num2 !== 0) {
+            return `${ num1 } is not evenly divisble by ${ num2 }`
+        }
+    } 
+    else {
+        return "Please put in valid numbers"
+    }
+}
+
+console.log(divisibleBy(10, 5));
+console.log(divisibleBy(17, 5));
+console.log(divisibleBy(134, "dog"));
+*/
+// Write a function named assignGrade that takes a number score as an argument and returns the letter grade for the score.
+// Declare our function assignGrade
+/*const assignGrade = (score) => {
+    //If score is between 90-100 return A
+    if(score <= 100 && score >= 90) {
+        return "A"
+    }
+    //If else score is between 80-89 return B
+    if(score <= 89 && score >= 80) {
+        return "B"
+    }
+    //If else score is between 70-79 return C
+    if(score <= 79 && score >= 70) {
+        return "C"
+    }
+    //If else score is between 60-69 return D
+    if(score <= 69 && score >= 60) {
+        return "D"
+    }
+    //Else return YOU SHALL NOT PASS!
+    else {
+        return "YOU SHALL NOT PASS!"
+    }
+};
+console.log(assignGrade(95));
+console.log(assignGrade(85));
+console.log(assignGrade(75));
+console.log(assignGrade(65));
+console.log(assignGrade(55));
+*/
+
+//Write a function that takes in an array and returns a new array with all numbers multiplied by 3
+/*var testArr1 = [3, 9, 15, 4, 10]
+//Declare empty new array
+var newArr = []
+//Declare a function that takes in testArr
+const multi3 = (array) => {
+//Make loop that goes through entire array
+    for(i = 0; i < array.length; i++) {
+        //multiply all numbers by three and push new number into newArr
+        newArr.push(array[i] * 3)
+    }
+    //return all numbers in newArr
+    return newArr
+}
+console.log(multi3(testArr1)); */
+
+//Write a function that takes in an array and returns a new array with only odd numbers
+/*var testArr2 = [0, 2, -7, 3, 5, 8, 10, 13]
+// Declare a new empty array 
+var oddNum = []
+// Declare a function that takes in testArr2
+const oddOnly = (array) => {
+    // Make for loop that goes through entire array and checks if value is odd
+    for(let i = 0; i < array.length; i++) {
+        if (array[i] % 2 !== 0) {
+            // Push the odd values into the new array
+            oddNum.push(array[i])
+        }
+    } // Return new array made up of odd values
+    return oddNum
+}
+console.log(oddOnly(testArr2)); */
+
+//Write a function that takes in a string and returns a new string with every letter capitalized. HINT: you do not need arrays or loops.
+/*var myMessage = "Hello There"
+// Declare a function for capitalized message 
+const messageCaps = (message) => {
+    // Utilize toUpperCase built in method //return capitalized string
+    return message.toUpperCase()
+}
+console.log(messageCaps(myMessage)); */
+
+//Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: use the typeof method
+/*var comboArr = [7, "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
+//Declare a new array with no value
+var letters = []
+//Declare a function that takes in array 
+const letterSort = (array) => {
+    //For loop that goes through all values 
+    for(let i = 0; i < array.length; i++) {
+        //use typeof method to check each value is a letter using if statement
+        if(typeof array[i] === "string") {
+            //push letters into new array
+            letters.push(array[i]);
+        } 
+    } //Use join method to combine all letters into a string
+    //return string of letters
+    return letters.join("")
+}
+console.log(letterSort(comboArr)); */
+
+/*
+//Create a function that returns the highest number
+var highestNumber = [1, 45, 4, 2, 7, 67, -9, 0, 6]
+// Declare a function to cycle through array
+const highNum = (array) => {
+     // Declare a variable that hold the first value in the array
+    var num = array[0]
+    // For loop to go through all numbers in array
+    for(let i = 0; i < array.length; i ++) {
+       // If statment that compares the current value is larger than the previous value
+       if(num < array[i]) {
+           num = array[i]
+       }   
+    } return num
+}
+console.log(highNum(highestNumber)); */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
