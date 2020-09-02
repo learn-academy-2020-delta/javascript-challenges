@@ -246,3 +246,81 @@
 // }
 //
 // console.log(bigNumber(highestNumber));
+
+// var lowestNumber = [1, 45, 4, 2, 7, 67, -9, 0, 6];
+// // write a function that takes an array
+// const lowNumber = (array) => {
+//   var lowestNumber = array[0];
+//   for (let i = 0; i < array.length; i++) {
+//     // identify the lowest number in the array
+//     if (array[i] < lowestNumber) {
+//       lowestNumber = array[i];
+//     }
+//   }
+//   // return the number
+//   return lowestNumber;
+// }
+//
+// console.log(lowNumber(lowestNumber));
+//
+// var addThese1 = [1, 2, 3, 4]
+// var addThese2 = []
+// //create a function that takes an array
+// const addNumbers = (array)=> {
+//   let sum = 0
+//   for (var i = 0; i < array.length; i++) {
+//     // add numbers together
+//     sum += array[i]
+//   }
+// //return the sum
+//   return sum
+// }
+//
+// console.log(addNumbers(addThese1));
+// console.log(addNumbers(addThese2));
+//
+// var meanChecker = [1, 2, 3]
+// //write a function that takes an array
+// const findMean = (array) => {
+//   let totalSum = 0
+//   for (let i = 0; i < array.length; i++) {
+//     //calculate the mean value
+//     totalSum += array[i]
+//   }
+//   return totalSum/array.length
+//   //return the mean value
+// }
+//
+// console.log(findMean(meanChecker));
+
+// var indexHighestNumber = [1, 4, 6, 5, 6578483, -37682, 7.64763]
+// //write a function that takes an array
+// const findHighIndex = (array) => {
+//   let highIndex = 0
+//   for (let i = 1; i < array.length; i++) {
+//     //find the index of the highest number
+//     if (array[i] > array[highIndex]) {
+//       highIndex = i
+//     }
+//   }
+//   //return that index value
+//   return highIndex
+// }
+//
+// console.log(findHighIndex(indexHighestNumber));
+// 
+// var testString1 = "hello"
+// var testString2 = "boogeyman"
+// //create a function that takes a string
+// const findMiddle = (array) => {
+//   if (array.length % 2 !== 0) {
+//     //find the middle value
+//     //return that value
+//     return array[(array.length/2) - .5]
+//   } else {
+//     return "Invalid test string"
+//   }
+// }
+//
+// console.log(findMiddle(testString1));
+// console.log(findMiddle(testString2));
