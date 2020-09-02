@@ -36,11 +36,23 @@
 // console.log(compareNum);
 
 // var array = [3, 57, -9, 20, 67]
-// for (let i = 0; i < array.length; i++) { 
+// for (let i = 0; i < array.length; i++) {
 //   console.log(array[i] % 2);
 // }
 
 //#3
+//.split makes each letter into it's own value
+var myString = "learn student"
+var myArray = myString.split("")
+var numbE = 0
 
+console.log(myArray);
 
+for (let i = 0; i < myArray.length; i++) {
+  if (myArray[i] === "e") {
+    numbE++
+  }
+//3 variables, 1 makes the string, 2 makes it into and array and turns each letter into and index making into it's own value, 3 start at 0 (1st index)
 
+//++ moves computer to check each index by 1
+}console.log(numbE);
