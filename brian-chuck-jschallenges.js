@@ -130,3 +130,44 @@
 // console.log(assignGrade(65));
 // console.log(assignGrade(55));
 // console.log(assignGrade(-5));
+
+// Write a function named greaterNum that takes 2 arguments
+// const greaterNum = (num1, num2) => {
+//   // returns whichever number is the greater (higher) number
+//   if (num1 > num2) {
+//     return num1
+//   } else if(num2 > num1) {
+//     return num2
+//   } else {
+//     return "Numbers are equal."
+//   }
+// }
+//
+// console.log(greaterNum(2, 3));
+// console.log(greaterNum(4, 1));
+// console.log(greaterNum(23, 23));
+
+//Write a function helloWorld, takes a language code
+const helloWorld = (langCode) => {
+//verify language code is a two letter valid myString
+  if (typeof langCode === "string" && langCode.length === 2) {
+// Verify language is supported, it = Italian, sp = Spanish, fr = French
+      if (langCode === "it") {
+        return "Ciao mondo!"
+      } else if (langCode === "sp") {
+        return "Hola mundo!"
+      } else if (langCode === "fr") {
+        return "Bonjour le monde!"
+      } else {
+        return "Hello world!"
+      }
+  } else {
+    return "Invalid language code."
+  }
+}
+
+console.log(helloWorld("it"));
+console.log(helloWorld("sp"));
+console.log(helloWorld("fr"));
+console.log(helloWorld("en"));
+console.log(helloWorld("zmb"));
