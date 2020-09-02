@@ -88,3 +88,40 @@
 // }
 // console.log(triple(3))
 
+//#5
+//
+// const multiply =(num1, num2) => {
+//   return num1 * num2
+//
+// }
+// console.log(multiply(2,10));
+
+//#6
+
+//
+// const divisibleBy = (num1, num2) => {
+//   if(num1 % 5 === 0 && num2 === 5 && num1 % num2 === 0) {
+//     return "10 is evenly divisible by 5"
+//   }else {
+//     return "Not evenly divisible by 5"
+//   }
+// }
+// console.log(divisibleBy(10, 5));
+
+//#7
+
+const assignGrade = (score) => {
+  if(score >= 90 && score <= 100) {
+    return "You got an A!"
+}else if (score >= 80 && score <= 89) {
+    return "You got a B!"
+}else if (score >= 70 && score <= 79) {
+    return "You got a C!"
+}else if (score >= 60 && score <= 69) {
+    return "You got a D!"
+}else {
+  return "Ouch..."
+}
+}
+
+console.log(assignGrade(75));
