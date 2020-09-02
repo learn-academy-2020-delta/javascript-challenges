@@ -16,8 +16,8 @@
 // }
 
 // Looping over an array
-// /var nums = [3, 57, -9, 20, 67];
-// var biggerNum = 0;
+// var nums = [3, 57, -9, 20, 67];
+// var biggerNum = nums [0];
 // for (let i = 0; i < nums.length; i++)
 // {
 //   if (nums[i] > biggerNum){
@@ -58,6 +58,7 @@
 // }
 
 //Stretch Challenge Fizz Buzz
+<<<<<<< HEAD
 // for (i = 1; i < 101 ; i++){
 //   if ((i % 3 === 0) && (i % 5 === 0)){
 //     console.log("fizzbuzz");
@@ -98,3 +99,16 @@
 //     }
 // }
 // console.log(oddOrEven("Joel"));
+=======
+for (let i = 1; i < 101 ; i++){
+  if ((i % 3 === 0) && (i % 5 === 0)){
+    console.log("fizzbuzz");
+  } else if(i % 3 === 0) {
+    console.log("fizz");
+  } else if (i % 5 === 0){
+    console.log("buzz");
+  } else{
+    console.log(i);
+  }
+}
+>>>>>>> a9605bbdf16af4ab4bd03815efc7a705459cd5a5
