@@ -17,7 +17,7 @@ for(let i = 1; i <= 20; i++) {
 }*/
 
 // For loop that logs highest number in array
-var nums = [3, 57, -9, 20, 67];
+//var nums = [3, 57, -9, 20, 67];
 /*let currentIndex = 0; 
 for(let i = 0; i < nums.length; i++) {
     if(currentIndex < nums[i]) {
@@ -35,9 +35,43 @@ for(let i = 0; i < nums.length; i++) {
     }
 }
 
-console.log(currentIndex2);*/
+console.log(currentIndex2);
 
 // For loop that lgs remainder of each number when divided by 2
 for(let i = 0; i < nums.length; i++){
     console.log(nums[i] % 2);
+} 
+
+var myString = "learn student";
+let numOfE = 0;
+for(let i = 0; i < myString.length; i++) {
+    if(myString[i] == "e") {
+        numOfE++
+    }
 }
+console.log(numOfE); 
+
+for(let i = 0; i <= 15; i++) {
+    if(i % 2 !== 0) {
+        console.log(i + " is odd")
+    } else {
+        console.log(i + " is even");
+    }
+} */
+
+
+for(let i = 1; i <= 100; i++) {
+    if (i % 3 === 0) {
+        console.log("Fizz")
+    } else if (i % 5 === 0) {
+        console.log("Buzz")
+    } else if (i % 3 === 0 && i % 5 === 0) {
+        console.log("FizzBuzz")
+    } else {
+        console.log(i)
+    }
+}
+
+
+
+
