@@ -44,13 +44,30 @@
 // } else {
 //   console.log("I don't know what that is.")
 // };
+//
+// var password
+//
+// if (password >= 12 && password.includes("!")) {
+//   console.log("That is a mighty strong password!")
+// } else if (password >= 8 && password.includes("!")) {
+//   console.log("That password is strong enough!")
+// } else {
+//   console.log("That is not a valid password.")
+// }
 
-var password
-
-if (password >= 12 && password.includes("!")) {
-  console.log("That is a mighty strong password!")
-} else if (password >= 8 && password.includes("!")) {
-  console.log("That password is strong enough!")
-} else {
-  console.log("That is not a valid password.")
-}
+//Arrays
+var groceryList = ["chips", "dip", "cookies"]
+groceryList.push("soda");
+console.log(groceryList)
+console.log(groceryList + ",granola");
+//
+// var numbers  = [2, 4, 6, 8, 10]
+// numbers.unshift(0);
+// console.log(numbers);
+// numbers.push(12);
+// console.log(numbers);
+// numbers.shift();
+// console.log(numbers);
+// [0].concat(numbers)
+// console.log([0].concat(numbers));
+// console.log(numbers);
