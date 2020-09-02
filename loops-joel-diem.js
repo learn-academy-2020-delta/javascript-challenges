@@ -16,25 +16,33 @@
 // }
 
 // Looping over an array
-var nums = [3, 57, -9, 20, 67];
-var biggerNum = 0;
-for (let i = 0; i < nums.length; i++)
-{
-  if (nums[i] > biggerNum){
-    biggerNum = nums[i];
-  }
-}
-console.log(biggerNum);
+// /var nums = [3, 57, -9, 20, 67];
+// var biggerNum = 0;
+// for (let i = 0; i < nums.length; i++)
+// {
+//   if (nums[i] > biggerNum){
+//     biggerNum = nums[i];
+//   }
+// }
+// console.log(biggerNum);
 
-for (let i = 0; i < nums.length; i++)
-{
-  if (nums[i] < biggerNum){
-    biggerNum = nums[i];
-  }
-}
-console.log(biggerNum);
+// for (let i = 0; i < nums.length; i++)
+// {
+//   if (nums[i] < biggerNum){
+//     biggerNum = nums[i];
+//   }
+// }
+// console.log(biggerNum);
 
-for (let i = 0; i < nums.length; i++)
-{
-  console.log(nums[i] % 2);
+// for (let i = 0; i < nums.length; i++)
+// {
+//   console.log(nums[i] % 2);
+// }
+
+var myString = "learn student";
+var numE = 0;
+for(let i = 0; i < myString.length; i++) {
+    if(myString.charAt(i) === "e")
+    numE++;
 }
+console.log(numE);
