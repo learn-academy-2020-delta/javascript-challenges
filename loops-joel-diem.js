@@ -51,21 +51,50 @@
 //Stretch Challenge Even or Odd
 // for (i = 0; i < 15 ; i++){
 //   if (i % 2 === 0){
-//     console.log(i + " is even");
+//     console.log(i + " is even"); // console.log(`${ 1 } is even`);
 //   } else {
-//     console.log(i + " is odd");
+//     console.log(i + " is odd");  // console.log(`${ 1 } is odd`);
 //   }
 // }
 
 //Stretch Challenge Fizz Buzz
-for (i = 1; i < 101 ; i++){
-  if ((i % 3 === 0) && (i % 5 === 0)){
-    console.log("fizzbuzz");
-  } else if(i % 3 === 0 && i % 5 !== 0){
-    console.log("fizz");
-  } else if (i % 5 === 0 && i % 3 !== 0){
-    console.log("buzz");
-  } else{
-    console.log(i);
-  }
-}
+// for (i = 1; i < 101 ; i++){
+//   if ((i % 3 === 0) && (i % 5 === 0)){
+//     console.log("fizzbuzz");
+//   } else if(i % 3 === 0 && i % 5 !== 0){
+//     console.log("fizz");
+//   } else if (i % 5 === 0 && i % 3 !== 0){
+//     console.log("buzz");
+//   } else{
+//     console.log(i);
+//   }
+// }
+
+//Function Challenges
+// declare const function called marco 
+// const marco = () => {
+//     // returns polo
+//     return "polo";
+// }
+// console.log(marco());
+
+// declare const function named greeting
+// takes name as an argument
+// const greeting = (name) => {
+// // returns the string that says "welcome persons name"
+//     return `Welcome ${ name }`;
+// }
+// console.log(greeting("Joel"));
+
+// declare const function named "oddOrEven" with a number as an arg
+// const oddOrEven = (number) => {
+//     // returns wether the number is odd or even
+//     if(number % 2 === 0) {
+//         return "Even"
+//     } else if(number % 2 === 1) {
+//         return "Odd"
+//     } else {
+//         return "Please input number"
+//     }
+// }
+// console.log(oddOrEven("Joel"));
