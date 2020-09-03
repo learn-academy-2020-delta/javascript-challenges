@@ -1,4 +1,3 @@
-const { TestScheduler } = require("jest")
 
 // Write the test for a function that returns "drink coffee" if you are tired and "keep working" if you are not tired. Write the function that will make the test pass.
 describe("tiredChecker", () => {
@@ -11,7 +10,7 @@ describe("tiredChecker", () => {
 const tiredChecker = (mood) => {
     if (mood === "tired"){
         return "drink coffee"
-    } 
+    }
     else if (mood === "not tired"){
         return "keep working"
     }
@@ -68,4 +67,64 @@ const smallNum = (num1, num2) => {
     else if (num1 < num2){
         return num1
     }
+  }
+
+    //Write the test for a function that takes in one argument(number) and returns whether the number is odd. Write the function that will make the test pass.
+
+describe("oddNums", () => {
+  test("function that takes in one argument(number) and returns whether the number is odd", () => {
+    expect(oddNums(9)).toEqual("odd")
+  })
+})
+
+const oddNums = (number) => {
+  if(number % 2 !== 0) {
+    return "odd"
+  }
+}
+
+//Write the test for a function that takes in a fruit and returns yellow if the argument is banana, red if apple and purple if grape. Write the function that will make the test pass.
+
+describe("fruitColor", () => {
+  test("function that takes in a fruit and returns yellow if the argument is banana, red if apple and purple if grape", () => {
+    expect(fruitColor("banana")).toEqual("yellow")
+    expect(fruitColor("apple")).toEqual("red")
+    expect(fruitColor("grape")).toEqual("purple")
+  })
+})
+
+const fruitColor = (fruit) => {
+  if(fruit === "banana"){
+    return "yellow"
+  }
+  else if(fruit === "apple"){
+    return "red"
+  }
+  else if(fruit === "grape"){
+    return "purple"
+  }
+}
+
+//Write the test for a function called Rick that returns "Morty". Write the function that will make the test pass
+
+describe("rick", () => {
+  test("function called Rick that returns morty", () => {
+    expect(rick()).toEqual("morty")
+  })
+})
+
+const rick = () => {
+  return "morty"
+}
+
+//Write the test for a function called greeter that takes a name as an argument and returns a greeting with that name to the screen. Write the function that will make the test pass
+
+describe("greeter", () => {
+  test("function called greeter that takes a name as an argument and returns a greeting with that name to the screen", () => {
+    expect(greeter("ryan")).toEqual("hello ryan")
+  })
+})
+
+const greeter = (name) => {
+  return `hello ${name}`
 }
