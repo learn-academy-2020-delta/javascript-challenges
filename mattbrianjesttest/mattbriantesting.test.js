@@ -35,7 +35,7 @@ const drink = (status) => {
    } else if (energy === "not stressed") {
      return "keep going"
    } else {
-     return "whatever" 
+     return "whatever"
   }
  }
 //Write the test for a function that returns "in budget" if a price is lower than $300. Write the function that will make the test pass.
@@ -55,7 +55,7 @@ const budget = (price) => {
   } else {
     return "over budget"
   }
-} 
+}
 
 //Write the test for a function that takes in two arguments(numbers) and returns the smaller number. Write the function that will make the test pass.
 //decribe the test
@@ -78,7 +78,7 @@ const smallNum = (num1, num2) => {
     return "Equal"
   }
 }
-    
+
 //Write the test for a function that takes in one argument(number) and returns whether the number is odd. Write the function that will make the test pass
 //decribe the test
 describe("isOdd", () => {
@@ -122,5 +122,54 @@ const fruitType = (fruit) => {
     return "error"
   }
 }
-  
-   
+
+//Write the test for a function called Rick that returns "Morty". Write the function that will make the test pass.
+//describe the test
+describe("Rick", () => {
+  //set the test
+  test("returns 'Morty'", () => {
+    //write expectations
+    expect(Rick()).toEqual("Morty")
+  })
+})
+
+const Rick = () => {
+  return "Morty"
+}
+
+//Write the test for a function called greeter that takes a name as an argument and returns a greeting with that name to the screen. Write the function that will make the test pass.
+//describe the test
+describe("greeter", () => {
+  //set the test
+  test("returns a greeting with argument name", () => {
+    //write expecations
+    expect(greeter("James")).toEqual("Hello there, James!")
+    expect(greeter("Dave")).toEqual("Hello there, Dave!")
+  })
+})
+
+const greeter = (name) => {
+  return `Hello there, ${ name }!`
+}
+
+//Write the test for a function called oddOrEven that takes an number as an argument and logs whether the number is odd or even. Write the function that will make the test pass.
+//describe the test
+describe("oddOrEven", () => {
+  //set the test
+  test("takes an number as an argument and logs whether the number is odd or even", () => {
+    //write expectations
+    expect(oddOrEven(2)).toEqual("is even")
+    expect(oddOrEven(33)).toEqual("is odd")
+    expect(oddOrEven(72.4)).toEqual("not an integer")
+  })
+})
+
+const oddOrEven = (num) => {
+  if (num % 2 === 1) {
+    return "is odd"
+  } else if (num % 2 === 0) {
+    return "is even"
+  } else {
+    return "not an integer"
+  }
+}
