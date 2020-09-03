@@ -128,13 +128,125 @@
 
 
 //FUNCTIONS, LOOPS, ARRAYS
-var testArr1 = [3, 9, 15, 4, 10]
-const multiplier = (array) => {
-  let arrayMult = []
-  for(let i = 0; i < array.length; i++){
-    arrayMult.push(array[i] * 3) 
-  }
-  return arrayMult
-}
-console.log(multiplier(testArr1));
+//#1
+// var testArr1 = [3, 9, 15, 4, 10]
+// const multiplier = (array) => {
+//   let arrayMult = []
+//   for(let i = 0; i < array.length; i++){
+//     arrayMult.push(array[i] * 3) 
+//   }
+//   return arrayMult
+// }
+// console.log(multiplier(testArr1));
 
+//#2
+// var testArr2 = [0, 2, -7, 3, 5, 8, 10, 13]
+// const noEven = (array) => {
+//   let arrayOdd = []
+//   for(let i = 0; i < array.length; i++){
+//     if(array[i] % 2 !== 0){
+//       arrayOdd.push(array[i])
+//     }
+//   }
+//   return arrayOdd
+// }
+// console.log(noEven(testArr2));
+
+//#3
+// var myMessage = "Hello There"
+// const upperCase = (string) => {
+//   let newString = string.toUpperCase()
+//     return newString
+// }
+// console.log(upperCase(myMessage));
+
+//#4
+// //takes in array of numbers and letters and returns a string with only letters.
+// var comboArr = [7, "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
+// const charOnly = (array) => {
+//   for(let i = 0; i < array.length; i++){
+//     //checks to see if index is a string or not
+//     if(typeof array[i] !== "string"){
+//       //removes any value that is not type string (what we are getting rid of, how many places to the right we are deleting)
+//       array.splice(i, 1)
+//     }
+//   }
+//   return array
+// }
+// console.log(charOnly(comboArr).join(""));
+
+// //#5
+// var highestNumber = [1, 45, 4, 2, 7, 67, -9, 0, 6]
+// var check = 0
+// //function that checks to find the hightest number in array.
+// const highest = (num) => {
+//   for(let i = 0; i < highestNumber.length; i++){
+//     if(highestNumber[i] > check){
+//       check = highestNumber[i]
+//     }
+//   }
+//   return check
+// }
+// console.log(highest(highestNumber));
+
+//#6
+// var lowestNumber = [1, 45, 4, 2, 7, 67, -9, 0, 6]
+// var check = 0
+// //function that checks to find the lowest number in array.
+// const lowest = (num) => {
+//   for(let i = 0; i < lowestNumber.length; i++){
+//     if(lowestNumber[i] < check){
+//       check = lowestNumber[i]
+//     }
+//   }
+//   return check
+// }
+// console.log(lowest(lowestNumber));
+
+//#7
+// var addThese1 = [1, 2, 3, 4]
+// var addThese2 = []
+// var total = 0
+// const sum = (array) => {
+//   for(let i = 0; i < array.length; i++){
+//     total = total + array[i]  
+//   }
+//   return total
+// }
+// //not too sure how to reset return value...
+// console.log(sum(addThese2));
+// console.log(sum(addThese1));
+
+//#8
+// var meanChecker = [1, 2, 3]
+// var total = 0
+// const mean = (array) => {
+//   for(let i = 0; i < array.length; i++){
+//     total = total + array[i] 
+//   }
+//   var avg = total/array.length
+//   return avg
+// }
+// console.log(mean(meanChecker))
+
+//#9
+//IDK HOW TO COMPLETE THIS ONE!!
+// var indexHighestNumber = [1, 4, 2]
+// var check = 0
+// const highIndex = (array) => {
+//   for (let i = 0; i < array.length; i++) {
+//     if (indexHighestNumber[i] > check) {
+//       check = indexHighestNumber[i] 
+//     }
+//   }
+//   return check
+// }
+// console.log(highIndex(indexHighestNumber))
+
+//#10
+//MY BRAIN IS FRIED, GAVE UP...
+// var testString1 = "hello"
+// var testString2 = "boogeyman"
+// const middle = (string) => {
+//   if()
+// }
