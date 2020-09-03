@@ -280,18 +280,34 @@ console.log(lowNum(lowestNumber))*/
 
 //Create a function that calculates the sum
 var addThese1 = [1, 2, 3, 4]
-// Declare a function that accepts whatever number of arguments
-const sumOf = (addThese1) => {
+/*const sumOf = (array) => {
     var sum = array.reduce(function(a,b) {
         return a + b
     }, 0 );
     console.log(sum)
 
 }
-// create var that holds sum of previous values
-// Make for loop that goes through array
-// Adds value in current index to variable sum and redeclares variable sum
-// returns sum of array
+console.log(sumOf(addThese1))*/
+// Declare a function that accepts whatever number of arguments
+const sumOf = (array) => {
+    // create var that holds sum of previous values
+    let sum = 0;
+    // Make for loop that goes through array
+    for (let i = 0; i < array.length; i++) {
+        // Adds value in current index to variable sum and redeclares variable sum
+        sum += array[i];
+    }
+    // returns sum of array
+    return sum
+}
+
+console.log(sumOf(addThese1))
+var addThese2 = [2, 4, 6, 8, 10]
+console.log(sumOf(addThese2))
+
+
+
+
 
 
 
