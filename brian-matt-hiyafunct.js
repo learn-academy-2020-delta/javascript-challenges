@@ -17,7 +17,7 @@ const oddNums = (arr) => {
 console.log(oddNums(arr2)); */
 
 //Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: Use typeof method
-/*var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"] 
+/*var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
 //Declare a function that will cycle through the array
 const letterString = (arr) => {
     //Extract letters only
@@ -26,6 +26,29 @@ const letterString = (arr) => {
     //return a string of the letters in the new array
     console.log(letterString(comboArr));*/
 
+//Create a function that takes in a string and returns a new string with all the vowels removed.
+// var str = "javascript is awesome"
+// //Convert string into an array
+// //Declare a function that cycles through an array
+// const noVowels = (string) => {
+//   var newArr = string.split("")
+//   //Identify and return the values that are not vowels
+//   return newArr.filter(value => {
+//     return value !== "a" && value !== "e" && value !== "i" && value !== "o" && value !== "u"}).join("")
+// }
+// console.log(noVowels(str));
+// //Output new array as string
 
-
-
+//Create a function that takes in two arrays as arguments returns one array with no duplicate values.
+// var arr1 = [3, 7, 10, 5, 4, 3]
+// var arr2 = [7, 8, 2, 1, 5, 4]
+// //Write a function that takes two arrays
+// const newArray = (arr1, arr2) => {
+//   //Join two arrays into one
+//   return arr1.concat(arr2).filter((value, index) => {
+//     //Cycle through new array to remove duplicate values
+//     return arr1.concat(arr2).indexOf(value) === index
+//   })
+// }
+// //Return the new array in console
+// console.log(newArray(arr1, arr2));
