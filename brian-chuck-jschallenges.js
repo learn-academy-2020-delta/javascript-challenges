@@ -308,7 +308,7 @@
 // }
 //
 // console.log(findHighIndex(indexHighestNumber));
-// 
+//
 // var testString1 = "hello"
 // var testString2 = "boogeyman"
 // //create a function that takes a string
@@ -324,3 +324,19 @@
 //
 // console.log(findMiddle(testString1));
 // console.log(findMiddle(testString2));
+
+// Stretch challenge
+// determine if the string is a palindrome??
+// return yes or no
+var isPalindrome1 = "racecar";
+var isPalindrome2 = "albatross";
+
+// create a function that takes a string
+const palindromeChecker = (string) => {
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === string[string.length - i]) {
+    } else {
+      return `No ${string}`
+    }
+  }
+}
