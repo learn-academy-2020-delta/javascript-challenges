@@ -146,3 +146,67 @@ describe ("greeter", () => {
 const greeter = (name) => {
   return `Hello, ${name}`
 }
+
+//Write the test for a function called oddOrEven that takes an number as an argument
+//logs whether the number is odd or even
+//Write the function that will make the test pass.
+describe ("oddOrEven", () => {
+    test ("takes a number argument and checks if it is odd or even", () => {
+        expect(oddOrEven(7)).toEqual("odd")
+        expect(oddOrEven(8)).toEqual("even")
+        expect(oddOrEven("incorrect")).toEqual("Error.")
+    })
+})
+
+const oddOrEven = (number) => {
+    if(number % 2 === 0) {
+        return "even"
+    } else if (number % 2 === 1) {
+        return "odd"
+    } else {
+        return "Error."
+    }
+}
+
+//Write the test for a function called doubler that takes an number
+//returns the result of the number multiplied by 2
+//Write the function that will make the test pass.
+describe ("doubler", () => {
+    test("takes a number argument and multiplies it by 2", () => {
+        expect(doubler(4)).toEqual(8)
+        expect(doubler(-2)).toEqual(-4)
+        expect(doubler("word")).toEqual("Error.")
+    })
+})
+
+const doubler = (number) => {
+    if (typeof number === "number") {
+        return number * 2
+    } else {
+        return "Error."
+    }
+}
+
+// Write the test for a function called multiply that takes two numbers as arguments
+//logs the result of one of the numbers multiplied by the other
+//Write the function that will make the test pass.
+describe ("multiply", () => {
+    test("takes two parameters and multiply them together", () =>{
+        expect(multiply(2,-2)).toEqual(-4)
+        expect(multiply(2,2)).toEqual(4)
+        expect(multiply(2,"dog")).toEqual("Error.")
+    })
+})
+
+const multiply = (num1, num2) => {
+    if (typeof num1 === "number" && typeof num2 === "number") {
+        return num1 * num2
+    } else {
+        return "Error."
+    }
+}
+
+//Write the test for a function called divisibleBy that takes two numbers as arguments
+//returns whether the first number is evenly divisible by the second
+//so that divisibleBy(10, 5) logs "10 is evenly divisible by 5"
+//Write the function that will make the test pass.
