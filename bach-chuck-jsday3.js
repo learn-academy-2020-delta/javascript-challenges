@@ -64,9 +64,9 @@ const noDuplicates = (array1, array2) => {
   let newArray = array1.concat(array2)
 // filter through entirely new array
 // remove duplicate values
-  return newArray.filter((letter, index) => {
+  return newArray.filter((value, index) => {
     //returns one array with no duplicate values.
-      return newArray.indexOf(letter) === index
+      return newArray.indexOf(value) === index
   })
 }
 console.log(noDuplicates(arr1, arr2))
