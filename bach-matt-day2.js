@@ -354,15 +354,22 @@ const midLetterOf = (string) => {
     // declare the variable middle letter (and set to 0 for now)
     let midLetter = 0
     // if the string length is odd, the middle letter will be half the length rounded up
-    // find middle letter of string by dividing the length of string by 2
-    // relationship between index and length is one less 
-    midLetter = Math.round(string.length / 2) - 1
+    if (string.length % 2 !== 0) {
+        // find middle letter of string by dividing the length of string by 2
+        // relationship between index and length is one less 
+        midLetter = Math.round(string.length / 2) - 1
+    } // else if the string length is even, there is no middle letter
+    else if (string.length % 2 === 0) {
+        return "The string does not have a middle letter."
+    }
+    // return the middle letter by using the charAt method
     return string.charAt(midLetter)
 }
 console.log(midLetterOf(testString1))
 console.log(midLetterOf(testString2))
+console.log(midLetterOf("tree"));
 
-// else if the string length is even, there is no middle letter
+
 
 
 
