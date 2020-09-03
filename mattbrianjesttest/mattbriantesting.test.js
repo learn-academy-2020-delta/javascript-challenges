@@ -173,3 +173,86 @@ const oddOrEven = (num) => {
     return "not an integer"
   }
 }
+
+//Write the test for a function called doubler that takes an number and returns the result of the number multiplied by 2. Write the function that will make the test pass.
+//Describe test
+describe("doubler", () => {
+  //set the test
+  test("takes an number and returns the result of the number multiplied by 2", () => {
+     //Write expectations
+      expect(doubler(4)).toEqual(8)
+      expect(doubler(1.5)).toEqual(3)
+      expect(doubler(-2)).toEqual(-4)
+  })
+})
+
+const doubler = (num) => {
+  return num * 2
+}
+
+//Write the test for a function called multiply that takes two numbers as arguments and logs the result of one of the numbers multiplied by the other. Write the function that will make the test pass. 
+//Describe the test
+describe("multiply", () => {
+  //Set the test
+  test("takes two numbers as arguments and logs the result of one of the numbers multiplied by the other", () => {
+    //Write expectations
+    expect(multiply(2, 4)).toEqual(8)
+    expect(multiply(-3, 5)).toEqual(-15)
+    expect(multiply(-4, -6)).toEqual(24)
+  })
+})
+
+const multiply = (num1, num2) => {
+  return num1 * num2
+}
+
+//Write the test for a function called divisibleBy that takes two numbers as arguments and returns whether the first number is evenly divisible by the second so that divisibleBy (10, 5) logs "10 is evenly divisible by 5". Write the function that will make the test pass.
+//Describe test
+describe("divisibleBy", () => {
+  //Set test
+  test("akes two numbers as arguments and returns whether the first number is evenly divisible by the second", () => {
+    //Write Expectations
+    expect(divisibleBy(10, 5)).toEqual("10 is evenly divisible by 5")
+  })
+})
+
+const divisibleBy = (num1, num2) => {
+  if(num1 % num2 === 0) {
+    return `${ num1 } is evenly divisible by ${ num2 }`
+  } else {
+    return "error"
+  }
+}
+
+//Write the test for a function called fizzbuzz. If a number is a multiple of 3, replace it with the word 'fizz'. If a number is a multiple of five, replace it with the word 'buzz'. If a number is a multiple of both 3 and 5, replace it with 'fizzbuzz'. Write the function that will make the test pass.
+//Describe test
+describe("fizzbuzz", () => {
+    //Set Test
+    test("If a number is a multiple of 3, replace it with the word 'fizz'. If a number is a multiple of five, replace it with the word 'buzz'. If a number is a multiple of both 3 and 5, replace it with 'fizzbuzz'", () => {
+        //Write Expectations
+        expect(fizzbuzz(3)).toEqual("fizz")
+        expect(fizzbuzz(5)).toEqual("buzz")
+        expect(fizzbuzz(15)).toEqual("fizzbuzz")
+    })
+})
+
+const fizzbuzz = (number) => {
+  if(number % 3 === 0 && number % 5 === 0) {
+    return "fizzbuzz"
+  } else if (number % 3 === 0) {
+    return "fizz"
+  } else if (number % 5 === 0) {
+    return "buzz"
+  } else {
+    return number
+  }
+}
+
+
+    
+
+  
+    
+
+
+
