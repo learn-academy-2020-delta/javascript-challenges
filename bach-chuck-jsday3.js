@@ -45,13 +45,13 @@
 var str = 'javascript is awesome';
 // create a function that takes a string
 const noVowels = (string) => {
-  let strArray = string.split('');
-  console.log(strArray);
-  let listOfVowels = ["a", "e", "i", "o", "u"]
+  //let strArray = string.split('');
   // identify/clarify vowels vs consenants
   // go through the string and remove the vowels
   // return the new string
-  //return string.filter((value, index) => value.charAt(index) !== listOfVowels)
+  return string.split('').filter(value => {
+    return value !== 'a' && value != 'e' && value != 'i' && value != 'o' && value != 'u';
+  }).join('')
 }
 
 console.log(noVowels(str));
