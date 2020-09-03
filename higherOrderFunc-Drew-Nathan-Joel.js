@@ -6,7 +6,7 @@ const multiplyBy10 = (arr) => {
     return arr.map(value => value * 10)
 }
 
-console.log(multiplyBy10(arr1));
+console.log("Multiply by 10:", multiplyBy10(arr1));
 console.log("Expected output --> [30, 90, 150, 40, 100]\n")
 
 // Write a function that takes in an array and returns a new array with only odd numbers.
@@ -15,7 +15,7 @@ const oddNum = (arr) => {
     return arr.filter(value => value % 2 !== 0)
 }
 
-console.log(oddNum(arr2));
+console.log("Only Odd:", oddNum(arr2));
 console.log("Expected output --> [7, 3, 5, 13]\n")
 
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: Use typeof method
@@ -27,7 +27,7 @@ return newString.join("")
 }
 
 
-console.log(onlyLetters(comboArr));
+console.log("Only Letters:", onlyLetters(comboArr));
 console.log("Expected output --> nicework\n")
 // Create a function that takes in a string and returns a new string with all the vowels removed.
 
@@ -41,7 +41,7 @@ let newString = filteredArray.join("")
   return newString
 }
 
-console.log(noVowels(str));
+console.log("No Vowels:", noVowels(str));
 console.log("Expected output --> 'jvscrpt s wsm'\n")
 
 
@@ -62,5 +62,5 @@ const noDuplicates = (array1, array2) => {
   return finalArr
 }
 
-console.log(noDuplicates(arr1, arr2));
+console.log("No Duplicates:", noDuplicates(arr1, arr2));
 console.log("Expected output -> [3, 7, 10, 5, 4, 8, 2, 1]")
