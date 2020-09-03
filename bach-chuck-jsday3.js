@@ -19,3 +19,27 @@
 // }
 //
 // console.log(findOdd(arr2));
+
+
+var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
+//Write a function that takes in an array of numbers and letters
+const findLetters = (array) => {
+    //filter through array
+    var newArray = array.filter(value => {
+        //use the typeof method to find only strings
+        return typeof value === "string"
+    })
+    return newArray.join("")
+//returns a string with only the letters. 
+}
+//write function to build word from letters
+const buildWord = (array) => {
+    let newString = ""
+    let newArray = []
+    newArray = findLetters(array)
+    console.log(newArray)
+    return newString = newArray.join("")
+}
+console.log(findLetters(comboArr))
+//console.log(buildWord(comboArr))
+
