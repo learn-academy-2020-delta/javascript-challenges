@@ -260,7 +260,38 @@ const highNum = (array) => {
 }
 console.log(highNum(highestNumber)); */
 
+//Create a function that returns the lowest number
+/*var lowestNumber = [1, 45, 4, 2, 7, 67, -9, 0, 6]
+// Declare a function to cycle through array
+const lowNum = (array) => {
+// Declare a variable that holds first value in array
+    var num = array[0]
+    // for loop to go through all numbers in array
+    for(let i = 0; i < array.length; i++) {
+        // if statement that compares the current value is smaller than the previous value
+        if (num > array[i]) {
+            num = array[i]
+        }
+    }//returns lowest number in array
+    return num
+}
+console.log(lowNum(lowestNumber))*/
 
+
+//Create a function that calculates the sum
+var addThese1 = [1, 2, 3, 4]
+// Declare a function that accepts whatever number of arguments
+const sumOf = (addThese1) => {
+    var sum = array.reduce(function(a,b) {
+        return a + b
+    }, 0 );
+    console.log(sum)
+
+}
+// create var that holds sum of previous values
+// Make for loop that goes through array
+// Adds value in current index to variable sum and redeclares variable sum
+// returns sum of array
 
 
 
