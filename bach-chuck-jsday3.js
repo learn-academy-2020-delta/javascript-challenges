@@ -42,16 +42,33 @@
 // }
 // console.log(findLetters(comboArr))
 
-var str = 'javascript is awesome';
-// create a function that takes a string
-const noVowels = (string) => {
-  //let strArray = string.split('');
-  // identify/clarify vowels vs consenants
-  // go through the string and remove the vowels
-  // return the new string
-  return string.split('').filter(value => {
-    return value !== 'a' && value != 'e' && value != 'i' && value != 'o' && value != 'u';
-  }).join('')
-}
+// var str = 'javascript is awesome';
+// // create a function that takes a string
+// const noVowels = (string) => {
+//   //let strArray = string.split('');
+//   // identify/clarify vowels vs consenants
+//   // go through the string and remove the vowels
+//   // return the new string
+//   return string.split('').filter(value => {
+//     return value !== 'a' && value != 'e' && value != 'i' && value != 'o' && value != 'u';
+//   }).join('')
+// }
 
-console.log(noVowels(str));
+// console.log(noVowels(str));
+
+var arr1 = [3, 7, 10, 5, 4, 3]
+var arr2 = [7, 8, 2, 1, 5, 4]
+//Create a function that takes in two arrays as arguments
+const noDuplicates = (array1, array2) => {
+// declare placeholder array that combines array1 and array2
+  //let newArray =[]
+  //newArray.concat(array1, array2)
+// filter through entirely new array
+  return array1.filter(valueArray1 => 
+    {
+      return array2.filter(valueArray2 => valueArray2 !== valueArray1)
+    })
+// remove duplicate values
+//returns one array with no duplicate values.
+}
+console.log(noDuplicates(arr1, arr2))
