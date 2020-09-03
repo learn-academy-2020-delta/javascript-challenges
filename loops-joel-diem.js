@@ -185,18 +185,104 @@
 // console.log(capitalizer(myMessage));
 
 // const function that takes in argument of array of numbers/letters
-const lettersOnly = (array) => {
-  // returns a string with only letters
-  let newArray = [];
-  for (i = 0; i < array.length; i++){
-    // typeof
-    if (typeof array[i] === "string"){
-      newArray.push(array[i]);
-    }
-  }
-  let sentence = newArray.join("");
-  return sentence;
-}
+// const lettersOnly = (array) => {
+//   // returns a string with only letters
+//   let newArray = [];
+//   for (i = 0; i < array.length; i++){
+//     // typeof
+//     if (typeof array[i] === "string"){
+//       newArray.push(array[i]);
+//     }
+//   }
+//   let sentence = newArray.join("");
+//   return sentence;
+// }
 
-var comboArr = [7 , "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
-console.log(lettersOnly(comboArr));
+// var comboArr = [7 , "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
+// console.log(lettersOnly(comboArr));
+
+// create a function
+// const highestNumFinder = (array) => {
+//   let biggerNum = array[0];
+//   for (let i = 0; i < array.length; i++){
+//     if (array[i] > biggerNum){
+//       biggerNum = array[i];
+//     }
+//   }
+//   return biggerNum;
+// }
+// // returns highest number; will want to define with array[i]
+// var highestNumber = [1, 45, 4, 2, 7, 67, -9, 0, 6]
+// console.log(highestNumFinder(highestNumber));
+
+// create a funct
+// const lowestNumFinder = (array) => {
+//   let smallerNum = array[0];
+//   for (let i = 0; i < array.length; i++){
+//     if (array[i] < smallerNum ){
+//       smallerNum = array[i];
+//     }
+//   }
+//   // returns the lowest number
+//   return smallerNum;
+// }
+// var lowestNumber = [1, 45, 4, 2, 7, 67, -9, 0, 6]
+// console.log(lowestNumFinder(lowestNumber));
+
+// create a function that takes an argument array
+//   const sumFinder = (array) => {
+//     let arraySum = 0;
+//     for (let i = 0; i < array.length; i++){
+//       arraySum += array[i];
+//     }
+//     // returns sum
+//     return arraySum;
+//   }
+// var addThese1 = [1, 2, 3, 4];
+// var addThese2 = [];
+// console.log(sumFinder(addThese1));
+// console.log(sumFinder(addThese2));
+
+// const function
+// const meanFinder = (array) =>{
+//   let sumValue = 0;
+//   let meanValue = 0;
+//   for (let i = 0; i < array.length; i++){
+//     sumValue += array[i]
+//   }
+// // divide array[i]
+// meanValue = sumValue/array.length;
+// // returns mean value
+// return meanValue;
+// }
+// var meanChecker = [1, 2, 3]
+// console.log(meanFinder(meanChecker))
+
+// create function with argument array
+// const indexOfHighestNumFinder = (array) => {
+//   let biggerNum = array[0]
+//   let indexOfHighNum = 0
+//   for (i = 0; i < array.length; i++){
+//     if (array[i] > biggerNum) {
+//       biggerNum = array[i]
+//       indexOfHighNum = i
+//     }
+//   }
+// // returns index of highest number
+// return indexOfHighNum
+// }
+// var indexHighestNumber = [1, 4, 2]
+// console.log(indexOfHighestNumFinder(indexHighestNumber))
+
+// create a function with argument string
+const middleLetterFinder = (string) => {
+  let midIndex = 0; 
+  //length/2 and round value up for the middle value
+  midIndex = Math.round((string.length/2) - 1)
+  // returns only middle value
+  return string.charAt(midIndex)
+}
+var testString1 = "hello"
+var testString2 = "boogeyman"
+console.log(middleLetterFinder(testString1))
+console.log(middleLetterFinder(testString2))
