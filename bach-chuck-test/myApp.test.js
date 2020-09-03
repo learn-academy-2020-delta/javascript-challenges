@@ -210,3 +210,44 @@ const multiply = (num1, num2) => {
 //returns whether the first number is evenly divisible by the second
 //so that divisibleBy(10, 5) logs "10 is evenly divisible by 5"
 //Write the function that will make the test pass.
+describe ("divisibleBy", () => {
+  test("takes 2 parameters and see if the first number is evenly divisible by the second", () => {
+    expect(divisibleBy(10, 5)).toEqual("10 is evenly divisible by 5")
+    expect(divisibleBy(10, 3)).toEqual("10 is not evenly divisible by 3")
+    expect(divisibleBy(10, "dog")).toEqual("Error.")
+  })
+})
+
+const divisibleBy = (num1, num2) => {
+  if (typeof num1 === "number" && typeof num2 === "number") {
+      if (num1 % num2 === 0) {
+        return `${num1} is evenly divisible by ${num2}`
+      } else {
+        return `${num1} is not evenly divisible by ${num2}`
+      }
+  } else {
+      return "Error."
+  }
+}
+
+// Write the test for a function called fizzbuzz. If a number is a multiple of 3, replace it with the word 'fizz'. If a number is a multiple of five, replace it with the word 'buzz'. If a number is a multiple of both 3 and 5, replace it with 'fizzbuzz'. Write the function that will make the test pass.
+describe ("fizzbuzz", () => {
+  test("if number/3 then fizz, if number/5 then buzz, if both then fizzbuzz", () => {
+    expect(fizzbuzz(9)).toEqual("fizz")
+    expect(fizzbuzz(10)).toEqual("buzz")
+    expect(fizzbuzz(15)).toEqual("fizzbuzz")
+    expect(fizzbuzz(2)).toEqual(2)
+  })
+})
+
+const fizzbuzz = (number) => {
+  if (number % 3 === 0 && number % 5 === 0) {
+    return "fizzbuzz"
+  } else if (number % 5 === 0) {
+    return "buzz"
+  } else if (number % 3 === 0) {
+    return "fizz"
+  } else {
+    return number
+  }  
+}
