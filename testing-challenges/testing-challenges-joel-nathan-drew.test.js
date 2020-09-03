@@ -64,7 +64,47 @@ const budgeter = (price) => {
 
 // Write the test for a function that takes in two arguments(numbers) and returns the smaller number. Write the function that will make the test pass.
 
+describe("argumentsNum", () =>{
+  test("a function that takes in two arguments numbers and returns the smaller number.", () =>{
+    expect(argumentsNum(5, 7)).toEqual(5)
+    expect(argumentsNum(8, 2)).toEqual(2)
+    expect(argumentsNum(4, 4)).toEqual("They are equal")
+  })
+
+})
+const argumentsNum = (num1, num2) =>{
+  if (num1 > num2) {
+    return num2
+  } else if (num1 < num2) {
+    return num1
+  }else if (num1 === num2) {
+    return "They are equal"
+  }else{
+    return "USER ERROR BRO"
+  }
+
+}
+
 // Write the test for a function that takes in one argument(number) and returns whether the number is odd. Write the function that will make the test pass.
+describe("isOdd", () =>{
+  test("a function that takes in one argument(number) and returns whether the number is odd", () =>{
+    expect(isOdd(5)).toEqual("This is odd")
+    expect(isOdd(8)).toEqual("That's an even number")
+    expect(isOdd(7)).toEqual("This is odd")
+    expect(isOdd("Heyoo")).toEqual("User is confused...")
+  })
+
+})
+const isOdd = (number) =>{
+  if(number % 2 !== 0 && typeof number === "number"){
+  return "This is odd"
+}else if (number % 2 === 0 && typeof number === "number"){
+  return "That's an even number"
+}else{
+return "User is confused..."
+}
+}
+
 
 // Write the test for a function that takes in a fruit and returns yellow if the argument is banana, red if apple and purple if grape. Write the function that will make the test pass.
 
