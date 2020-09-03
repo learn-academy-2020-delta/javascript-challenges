@@ -295,7 +295,7 @@ const sumOf = (array) => {
     // Make for loop that goes through array
     for (let i = 0; i < array.length; i++) {
         // Adds value in current index to variable sum and redeclares variable sum
-        sum += array[i];
+        sum += array[i]; // this is short hand for sum = sum + array[i]
     }
     // returns sum of array
     return sum
@@ -304,6 +304,65 @@ const sumOf = (array) => {
 console.log(sumOf(addThese1))
 var addThese2 = [2, 4, 6, 8, 10]
 console.log(sumOf(addThese2))
+
+// Create a function that calculates the mean value
+var meanChecker = [1, 2, 3]
+// Declare funct that accepts user's array
+const meanOf = (array) => {
+    // declare var that holds total sum
+    var sum = 0;
+    // write for loop that goes through array
+    for (let i = 0; i < array.length; i++) {
+        // adds value in current index to var sum and redeclares variable sum
+        sum += array[i]
+    }
+    // takes sum and divides by number of values in index and saves to new var mean
+    let mean = sum / array.length
+    // return the value of mean of array
+    return mean
+}
+console.log(meanOf(meanChecker))
+
+// Create function that finds the index of the highest number
+var indexHighestNumber = [1, 4, 2]
+// Declare a function that accepts user's array
+const indexOfHighNumFinder = (array) => {
+    // Declare a variable that holds the largest number in array
+    let highNum = array[0]
+    // Decalre a variable that holds the index of the largest number in array
+    let indexOfHighNum = 0
+    // Write a for loop that goes through all numbers in array
+    for (let i = 0; i < array.length; i++) {
+        // Write if statement that finds highest value in array
+        if (array[i] > highNum) {
+            // save the value of the highest number in highNum (so that it can update with every iteration of loop)
+            highNum = array[i]
+            // get the array index where highest number exists
+            indexOfHighNum = i
+        }
+    }
+    // return index that contains highest number
+    return indexOfHighNum
+}
+console.log(indexOfHighNumFinder(indexHighestNumber))
+
+// Create a function that takes in string and returns only the middle value
+var testString1 = "hello"
+var testString2 = "boogeyman"
+// Declare a function that accepts user string 
+const midLetterOf = (string) => {
+    // declare the variable middle letter (and set to 0 for now)
+    let midLetter = 0
+    // if the string length is odd, the middle letter will be half the length rounded up
+    // find middle letter of string by dividing the length of string by 2
+    // relationship between index and length is one less 
+    midLetter = Math.round(string.length / 2) - 1
+    return string.charAt(midLetter)
+}
+console.log(midLetterOf(testString1))
+console.log(midLetterOf(testString2))
+
+// else if the string length is even, there is no middle letter
 
 
 
