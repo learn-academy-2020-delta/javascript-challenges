@@ -42,10 +42,10 @@
 // }
 // console.log(findLetters(comboArr))
 
-var str = "javascript is awesome";
+var str = 'javascript is awesome';
 // create a function that takes a string
 const noVowels = (string) => {
-  let strArray = string.split(" ");
+  let strArray = string.split('');
   console.log(strArray);
   let listOfVowels = ["a", "e", "i", "o", "u"]
   // identify/clarify vowels vs consenants
