@@ -128,3 +128,94 @@ describe("greeter", () => {
 const greeter = (name) => {
   return `hello ${name}`
 }
+
+
+//Write the test for a function called oddOrEven that takes an number as an argument and logs whether the number is odd or even. Write the function that will make the test pass.
+
+describe("oddOrEven", () => {
+  test("function called oddOrEven that takes an number as an argument and logs whether the number is odd or even.", () => {
+    expect(oddOrEven(5)).toEqual("odd")
+    expect(oddOrEven(4)).toEqual("even")
+  })
+})
+
+const oddOrEven = (numb) => {
+  if(numb % 2 === 0){
+    return "even"
+  }
+  else if (numb % 2 !== 0){
+    return "odd"
+  }
+}
+
+
+//Write the test for a function called doubler that takes an number and returns the result of the number multiplied by 2. Write the function that will make the test pass.
+
+describe("doubler", () => {
+  test("function called doubler that takes an number and returns the result of the number multiplied by 2.", () => {
+    expect(doubler(5)).toEqual(10)
+  })
+}) 
+
+const doubler = (numb) => {
+  return numb * 2
+}
+
+// Write the test for a function called multiply that takes two numbers as arguments and logs the result of one of the numbers multiplied by the other. Write the function that will make the test pass.
+
+describe("multiply", () => {
+  test("function called multiply that takes two numbers as arguments and logs the result of one of the numbers multiplied by the other.", () => {
+    expect(multiply(4, 8)).toEqual(32)
+  })
+})
+
+const multiply = (num1, num2) => {
+  return num1 * num2
+}
+
+// Write the test for a function called divisibleBy that takes two numbers as arguments and returns whether the first number is evenly divisible by the second so that divisibleBy(10, 5) logs "10 is evenly divisible by 5". Write the function that will make the test pass.
+
+describe("divisibleBy", () =>{
+  test("function called divisibleBy that takes two numbers as arguments and returns whether the first number is evenly divisible by the second so that divisibleBy(10, 5) logs '10 is evenly divisible by 5'.", () => {
+    expect(divisibleBy(10, 5)).toEqual("10 is evenly divisible by 5.")
+  })
+})
+
+const divisibleBy = (num1, num2) => {
+  if(num1 % num2 === 0){
+    return `${num1} is evenly divisible by ${num2}.`
+  }
+}
+
+// Write the test for a function called fizzbuzz. If a number is a multiple of 3, replace it with the word 'fizz'. If a number is a multiple of five, replace it with the word 'buzz'. If a number is a multiple of both 3 and 5, replace it with 'fizzbuzz'. Write the function that will make the test pass.
+
+describe("fizzbuzz", () => {
+  test("If a number is a multiple of 3, replace it with the word 'fizz'. If a number is a multiple of five, replace it with the word 'buzz'. If a number is a multiple of both 3 and 5, replace it with 'fizzbuzz'.", () => {
+    expect(fizzbuzz(6)).toEqual("fizz")
+    expect(fizzbuzz(10)).toEqual("buzz")
+    expect(fizzbuzz(15)).toEqual("fizzbuzz")
+    expect(fizzbuzz(4)).toEqual("NO FIZZBUZZ FOR U")
+  })
+})
+
+const fizzbuzz = (num) => {
+  if(num % 3 === 0 && num % 5 === 0){
+    return "fizzbuzz"
+  }
+  else if(num % 3 === 0){
+    return "fizz"
+  }
+  else if (num % 5 === 0){
+    return "buzz"
+  }
+  else{
+    return "NO FIZZBUZZ FOR U"
+  }
+}
+
+
+
+
+
+
+
