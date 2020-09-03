@@ -21,25 +21,37 @@
 // console.log(findOdd(arr2));
 
 
-var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
-//Write a function that takes in an array of numbers and letters
-const findLetters = (array) => {
-    //filter through array
-    var newArray = array.filter(value => {
-        //use the typeof method to find only strings
-        return typeof value === "string"
-    })
-    return newArray.join("")
-//returns a string with only the letters. 
-}
-//write function to build word from letters
-const buildWord = (array) => {
-    let newString = ""
-    let newArray = []
-    newArray = findLetters(array)
-    console.log(newArray)
-    return newString = newArray.join("")
-}
-console.log(findLetters(comboArr))
-//console.log(buildWord(comboArr))
+// var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
+// //Write a function that takes in an array of numbers and letters
+// const findLetters = (array) => {
+//     //filter through array
+//     var newArray = array.filter(value => {
+//         //use the typeof method to find only strings
+//         return typeof value === "string"
+//     })
+//     return newArray.join("")
+// //returns a string with only the letters.
+// }
+// //write function to build word from letters
+// const buildWord = (array) => {
+//     let newString = ""
+//     let newArray = []
+//     newArray = findLetters(array)
+//     console.log(newArray)
+//     return newString = newArray.join("")
+// }
+// console.log(findLetters(comboArr))
 
+var str = 'javascript is awesome';
+// create a function that takes a string
+const noVowels = (string) => {
+  let strArray = string.split('');
+  console.log(strArray);
+  let listOfVowels = ["a", "e", "i", "o", "u"]
+  // identify/clarify vowels vs consenants
+  // go through the string and remove the vowels
+  // return the new string
+  //return string.filter((value, index) => value.charAt(index) !== listOfVowels)
+}
+
+console.log(noVowels(str));
