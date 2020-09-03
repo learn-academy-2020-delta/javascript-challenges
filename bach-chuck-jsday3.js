@@ -61,14 +61,12 @@ var arr2 = [7, 8, 2, 1, 5, 4]
 //Create a function that takes in two arrays as arguments
 const noDuplicates = (array1, array2) => {
 // declare placeholder array that combines array1 and array2
-  //let newArray =[]
-  //newArray.concat(array1, array2)
+  let newArray = array1.concat(array2)
 // filter through entirely new array
-  return array1.filter(valueArray1 => 
-    {
-      return array2.filter(valueArray2 => valueArray2 !== valueArray1)
-    })
 // remove duplicate values
-//returns one array with no duplicate values.
+  return newArray.filter((letter, index) => {
+    //returns one array with no duplicate values.
+      return newArray.indexOf(letter) === index
+  })
 }
 console.log(noDuplicates(arr1, arr2))
