@@ -275,14 +275,32 @@
 // console.log(indexOfHighestNumFinder(indexHighestNumber))
 
 // create a function with argument string
-const middleLetterFinder = (string) => {
-  let midIndex = 0; 
-  //length/2 and round value up for the middle value
-  midIndex = Math.round((string.length/2) - 1)
-  // returns only middle value
-  return string.charAt(midIndex)
-}
-var testString1 = "hello"
-var testString2 = "boogeyman"
-console.log(middleLetterFinder(testString1))
-console.log(middleLetterFinder(testString2))
+// const middleLetterFinder = (string) => {
+//   let midIndex = 0; 
+//   //length/2 and round value up for the middle value
+//   midIndex = Math.round((string.length/2) - 1)
+//   // returns only middle value
+//   return string.charAt(midIndex)
+// }
+// var testString1 = "hello"
+// var testString2 = "boogeyman"
+// console.log(middleLetterFinder(testString1))
+// console.log(middleLetterFinder(testString2))
+
+// Clean Function: Create a function that filters false, null, 0 and blank values from an array. BELOW SOLUTION DOESNT WORK YET
+// var filterArrayValues = [58, " ", "abcd", true, null, false, 0]
+
+// const dataFilter = (array) => {
+//   let trimmedArray = array.map(value => {
+//     if(typeof value === "string"){
+//       return value.trim()
+//     }
+//     else{
+//       return value
+//     }
+//   })
+//   return array.filter(value => value.trim())
+// }
+
+// console.log(dataFilter(filterArrayValues))
+// // Expected output --> [58, "abcd", true]
