@@ -69,18 +69,12 @@
 
 //#2
 //Create a function that takes in two arrays as arguments returns one array with no duplicate values.
-// var arr1 = [3, 7, 10, 5, 4, 3]
-// var arr2 = [7, 8, 2, 1, 5, 4]
-// const noRepeats = (array1, array2) => {
-//     let bigArr = array1.concat(array2)
-//     let finalArray = []
-//     bigArr.forEach(value => {
-//         let status = true
-//         if (status != finalArray.includes(value)) {
-//             finalArray.push(value)
-//         }
-//     });
-//     return finalArray
-// }
-// console.log(noRepeats(arr1, arr2));
-// //Expected output -> [3, 7, 10, 5, 4, 8, 2, 1]
+var arr1 = [3, 7, 10, 5, 4, 3]
+var arr2 = [7, 8, 2, 1, 5, 4]
+const noRepeats = (array1, array2) => {
+    return array1.concat(array2).filter((value, index) => {
+      return array1.concat(array2).indexOf(value) === index
+    })
+  }
+console.log(noRepeats(arr1, arr2));
+//Expected output -> [3, 7, 10, 5, 4, 8, 2, 1]
