@@ -117,12 +117,14 @@ let pokeTwo = {
     pokemon_type: "Water"
 }
 // Write a function called describePokemon() that take an object like the ones above and uses destructuring to return a description of the Pokemon such that:
-const describePokemon = (object) => {
+const describePokemon = (array) => {
+  //deconstructure the objects into variables so they can be accessed
+  let { species, pokemon_type } = array
   return ` ${ species } is a ${ pokemon_type }`
 }
 
-var { species, pokemon_type } = pokeOne
-//var { species, pokemon_type } = pokeTwo
+// var { species, pokemon_type } = pokeOne
+// var { species, pokemon_type } = pokeTwo
 
 console.log(describePokemon(pokeOne))
 // --> "Charmandar is a Fire pokemon"
