@@ -56,18 +56,40 @@
 // }
 
 //Arrays
-var groceryList = ["chips", "dip", "cookies"]
-groceryList.push("soda");
-console.log(groceryList)
-console.log(groceryList + ",granola");
+// var groceryList1 = ["chips", "dip", "cookies"]
+// var groceryList2 = ["granola"]
+// groceryList1.push("soda");
+// console.log(groceryList1)
+// console.log(groceryList1.concat(groceryList2))
+// console.log([...groceryList1, ...groceryList2])
+//
+
+
 //
 // var numbers  = [2, 4, 6, 8, 10]
-// numbers.unshift(0);
-// console.log(numbers);
-// numbers.push(12);
-// console.log(numbers);
-// numbers.shift();
-// console.log(numbers);
-// [0].concat(numbers)
+// // numbers.unshift(0);
+// // console.log(numbers);
+// // numbers.push(12);
+// // console.log(numbers);
+// // numbers.shift();
+// // console.log(numbers);
+// // [0].concat(numbers)
 // console.log([0].concat(numbers));
 // console.log(numbers);
+
+// var numSet = [2, 13, 6, 8, 4, 2]
+//
+// console.log(numSet.indexOf(2));
+// console.log(numSet.lastIndexOf(2));
+
+// var chars = ["y", "a", "r", "r", "a"]
+// var joined = chars.join("-")
+// var charsReversed = chars.reverse()
+//
+// // console.log(joined);//expect "yarra"
+// // console.log(chars.join(""));//expect "yarra"
+// // console.log(charsReversed.join("-"));
+// console.log(charsReversed.join(""));
+
+var names1 = ["Andee", "Sarah", "Rachael"]
+var names2 = ["Diem", "Bach", "Ryan"]
