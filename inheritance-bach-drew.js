@@ -150,8 +150,8 @@ myTesla.fullBrake()
 // console.log(myTesla)
 
 // Story: As a programmer, I can speed my Toyota up by 5 per acceleration.
-myVolkswagen.leastSpeed()
-// console.log(myVolkswagen)
+myToyota.leastSpeed()
+// console.log(myToyota)
 
 // Story: As a programmer, I can slow my Toyota down by 2 per braking.
 myToyota.leastBrake()
