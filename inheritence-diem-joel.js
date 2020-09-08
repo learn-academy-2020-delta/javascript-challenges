@@ -70,47 +70,105 @@
 
 class Car {
     constructor(model, year) {
-      this.model = model
-      this.year = year
-      this.wheels = 4
-      this.lights = "off"
+        this.model = model
+        this.year = year
+        this.wheels = 4
+        this.lights = "off"
+        this.signal = "off"
+        this.speed = 0
     }
-    wheels() {
-      // return this.wheels;
+
+    howManyWheels() {
+        return this.wheels
     }
-    lights() {
-      if (this.lights === "off") {
-        this.lights = "on"
-      }
-      // return this.lights;
+
+    turnLightsOn() {
+        if (this.lights === "off") {
+            this.lights = "on"
+        }
     }
-  
-  }
-  
-  class Tesla extends Car {
-    constructor(model, year) {
-      super(model, year)
+
+    turnSignalOn() {
+        if (this.signal === "off") {
+            this.signal = "on"
+        }
     }
-  }
-  
-  class Toyota extends Car {
-    constructor(model, year) {
-      super(model, year)
+
+    carInfo() {
+        return `Your car is a ${this.model} made in ${this.year}. It has ${this.wheels} wheels. Right now the lights are ${this.lights} and the signal is ${this.signal}. You're travelling at ${this.speed} mph.`
     }
-  }
-  
-  class Volkswagen extends Car {
-    constructor(model, year) {
-      super(model, year)
+}
+
+class Tesla extends Car {
+    constructor(model, year, speed) {
+        super(model, year, speed)
     }
-  }
-  
-  var myCar = new Car("generic car", 2009)
-  var myTesla = new Tesla("Model X", 2019)
-  var myToyota = new Toyota("Prius", 2014)
-  var myVolkswagen = new Volkswagen("Beetle", 1999)
-  myCar.lights()
-  console.log(myCar)
-  console.log(myTesla)
-  console.log(myToyota)
-  console.log(myVolkswagen)
+
+    accelerator() {
+        this.speed += 10
+        return `You're now driving at ${this.speed} mph`
+    }
+
+    brake() {
+        this.speed -= 7
+        return `You're now driving at ${this.speed} mph`
+    }
+}
+
+class Toyota extends Car {
+    constructor(model, year, speed) {
+        super(model, year, speed)
+    }
+
+    accelerator() {
+        this.speed += 5
+        return `You're now driving at ${this.speed} mph`
+    }
+
+    brake() {
+        this.speed -= 2
+        return `You're now driving at ${this.speed} mph`
+    }
+}
+
+class Volkswagen extends Car {
+    constructor(model, year, speed) {
+        super(model, year, speed)
+    }
+
+    accelerator() {
+        this.speed += 7
+        return `You're now driving at ${this.speed} mph`
+    }
+
+    brake() {
+        this.speed -= 5
+        return `You're now driving at ${this.speed} mph`
+    }
+}
+
+var myCar = new Car("generic car", 2009)
+
+myCar.turnLightsOn()
+myCar.turnSignalOn()
+console.log(myCar)
+
+var myTesla = new Tesla("Model X", 2019)
+
+myTesla.accelerator()
+myTesla.brake()
+console.log(myTesla.carInfo())
+
+
+var myToyota = new Toyota("Prius", 2014)
+
+myToyota.accelerator()
+myToyota.brake()
+console.log(myToyota)
+
+
+var myVolkswagen = new Volkswagen("Beetle", 1999)
+
+myVolkswagen.accelerator()
+myVolkswagen.brake()
+console.log(myVolkswagen)
