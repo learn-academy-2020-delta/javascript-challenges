@@ -74,10 +74,26 @@
 
 //SPREAD CHALLENGES
 //#1
-function combineArrays(arrOne, arrTwo) {
-  return [...arrOne, ...arrTwo]
+// function combineArrays(arrOne, arrTwo) {
+//   return [...arrOne, ...arrTwo]
+// }
+
+// console.log(combineArrays([2, 4, 2], [4, 6, 11]))
+
+
+//#2
+// function combineAndFilterOdd(arrOne, arrTwo, arrThree){
+//   return[...arrOne, ...arrTwo, ...arrThree].filter(num => num % 2 !== 0)
+// }
+
+// console.log(combineAndFilterOdd([3, 2, 5], [5, 8, 7], [4, 5, 6]))
+
+
+//#3 STRETCH
+function combineAndFilterOdd(...arrays){
+  let combinedArrays = arrays.concat(...arrays)
+  console.log(combinedArrays);
+  return combinedArrays.filter(num => num % 2 !== 0)
 }
 
-console.log(combineArrays([2, 4, 2], [4, 6, 11]))
-
-
+console.log(combineAndFilterOdd([3, 2, 5], [5, 8, 7], [4, 5, 6]))
