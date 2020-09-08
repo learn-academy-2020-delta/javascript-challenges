@@ -78,7 +78,12 @@
 function combineArrays(arrOne, arrTwo) {
   return [...arrOne, ...arrTwo]
 }
-
 console.log(combineArrays([2, 4, 2], [4, 6, 11]))
 
+//#2
+function combineAndFilterOdd(arrOne, arrTwo, arrThree){
+  return arrOne.concat(arrTwo).concat(arrThree).filter(num => num % 2 !== 0)
+}
+
+console.log(combineAndFilterOdd([3, 2, 5], [5, 8, 7], [4, 5, 6]))
 
