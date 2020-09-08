@@ -1,5 +1,5 @@
 //inheritence
-
+// create a default car Class
 class Car {
   constructor(model, year){
     this.wheels = 4
@@ -11,10 +11,17 @@ class Car {
 
   }
 
+  // return all the info about a car
+  carInfo() {
+    return `The ${this.year} ${this.model} has ${this.wheels} wheels, the lights are ${this.lights}, the turn signal is set to ${this.signal}, and the current speed is ${this.speed}mph.`
+  }
+
+  // tell the user how many wheels the car has
   howManyWheels(){
     return `this car has ${this.wheels} wheels`
   }
 
+  // turn the light on and off
   toggleLights(state){
     if (state === "On") {
       this.lights = "On"
@@ -25,6 +32,7 @@ class Car {
 
   }
 
+  // toggle the turn signal
   toggleSignal(state){
     if (state === "Left") {
       this.signal = "Left"
@@ -36,6 +44,7 @@ class Car {
     return `the turn signal is ${this.signal}`
   }
 
+  // speed up or slow down the car
   accelerate(mph){
     this.speed += mph
     return `The current speed of the ${this.model} is ${this.speed} mph`
@@ -53,8 +62,6 @@ class Car {
     // }
     // return `The current speed is ${this.speed} mph`
   }
-
-
 }
 
 class Tesla extends Car {
@@ -73,9 +80,13 @@ class Volkswagen extends Car {
     super(model, year)
   }
 }
+// make myCar
 var myCar = new Car("generic", 2020)
+// create a Tesla
 var myTesla = new Tesla("Model S", 2019)
+// create a Toyota
 var myToyota = new Toyota("Camary", 2014)
+// create a Volkswagen
 var myVolkswagen = new Volkswagen("Passat", 2013)
 
 
@@ -96,3 +107,8 @@ console.log(myToyota.accelerate(5));
 console.log(myToyota.accelerate(-2));
 console.log(myVolkswagen.accelerate(7));
 console.log(myVolkswagen.accelerate(-5));
+// get all the information about the car
+console.log(myVolkswagen.carInfo());
+console.log(myToyota.carInfo());
+console.log(myTesla.carInfo());
+console.log(myCar.carInfo());
