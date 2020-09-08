@@ -69,48 +69,48 @@
 
 
 class Car {
-  constructor(model, year) {
-    this.model = model
-    this.year = year
-    this.wheels = 4
-    this.lights = "off"
-  }
-  wheels() {
-    // return this.wheels;
-  }
-  lights() {
-    if (this.lights === "off") {
-      this.lights = "on"
+    constructor(model, year) {
+      this.model = model
+      this.year = year
+      this.wheels = 4
+      this.lights = "off"
     }
-    // return this.lights;
+    wheels() {
+      // return this.wheels;
+    }
+    lights() {
+      if (this.lights === "off") {
+        this.lights = "on"
+      }
+      // return this.lights;
+    }
+  
   }
-
-}
-
-class Tesla extends Car {
-  constructor(model, year) {
-    super(model, year)
+  
+  class Tesla extends Car {
+    constructor(model, year) {
+      super(model, year)
+    }
   }
-}
-
-class Toyota extends Car {
-  constructor(model, year) {
-    super(model, year)
+  
+  class Toyota extends Car {
+    constructor(model, year) {
+      super(model, year)
+    }
   }
-}
-
-class Volkswagen extends Car {
-  constructor(model, year) {
-    super(model, year)
+  
+  class Volkswagen extends Car {
+    constructor(model, year) {
+      super(model, year)
+    }
   }
-}
-
-var myCar = new Car("generic car", 2009)
-var myTesla = new Tesla("Model X", 2019)
-var myToyota = new Toyota("Prius", 2014)
-var myVolkswagen = new Volkswagen("Beetle", 1999)
-myCar.lights()
-console.log(myCar)
-console.log(myTesla)
-console.log(myToyota)
-console.log(myVolkswagen)
+  
+  var myCar = new Car("generic car", 2009)
+  var myTesla = new Tesla("Model X", 2019)
+  var myToyota = new Toyota("Prius", 2014)
+  var myVolkswagen = new Volkswagen("Beetle", 1999)
+  myCar.lights()
+  console.log(myCar)
+  console.log(myTesla)
+  console.log(myToyota)
+  console.log(myVolkswagen)
