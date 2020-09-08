@@ -91,9 +91,72 @@
 
 //#3 STRETCH
 function combineAndFilterOdd(...arrays){
-  let combinedArrays = arrays.concat(...arrays)
-  console.log(combinedArrays);
-  return combinedArrays.filter(num => num % 2 !== 0)
+  return [].concat(...arrays).filter(num => num % 2 !== 0)
 }
 
 console.log(combineAndFilterOdd([3, 2, 5], [5, 8, 7], [4, 5, 6]))
+
+//String Interpolation
+// //#1
+// var meaningOfLife = 42
+//
+// console.log(`The answer to the meaning of life is ${meaningOfLife}`);
+
+//#2
+// var zooAnimals = ['giraffe', 'fennec fox', 'elephant']
+//
+// zooAnimals.forEach(animal =>  console.log(`The zoo has a ${animal}`))
+
+//#3
+//
+// var burger = {
+//     cheese: 'cheddar',
+//     patty: 'black bean',
+//     onions: false,
+// }
+//
+// console.log(`${burger.patty} burger with ${burger.cheese}`);
+
+// //STRETCH
+//
+// var beanBurger = {
+//     cheese: 'cheddar',
+//     patty: 'black bean',
+//     onions: false,
+// }
+//
+// var turkeyBurger = {
+//     cheese: 'swiss',
+//     patty: 'turkey',
+//     onions: true,
+// }
+//
+// const describeBurger = (burger) => {
+//   if (burger.onions === true) {
+//     return console.log(`${burger.patty} burger with ${burger.cheese} and onions`);
+//   } else {
+//     return console.log(`${burger.patty} burger with ${burger.cheese} and no onions`);
+//   }
+// }
+//
+// describeBurger(beanBurger)
+// describeBurger(turkeyBurger)
+
+//Ternary Operators
+//#1
+//
+// const oldEnough = (age) => {
+//   return age >= 18 ? `They are ${age}, they are old enough to vote!` : `They are ${age}, they are too young to vote!`
+// }
+//
+// console.log(oldEnough(18));
+// console.log(oldEnough(17));
+
+//#2
+// const oddOrEven = (array) => {
+//   let whatever = [...array]
+//   return whatever.map(value => value % 2 === 0 ? "even" : "odd")
+// }
+//
+//testArray = [1, 2, 3, 4]
+// console.log(oddOrEven(testArray));
