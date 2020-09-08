@@ -1,12 +1,10 @@
 //inheritence
 
 class Car {
-  constructor(){
-    this.doors = 4
+  constructor(model, year){
     this.wheels = 4
-    this.model = "generic car"
-    this.year = 2020
-
+    this.model = model
+    this.year = year
   }
 
   howManyWheels(){
@@ -14,10 +12,26 @@ class Car {
   }
 }
 
-var myCar = new Car()
-//   constructor(){
-//     this.model = "generic car"
-//   }
+class Tesla extends Car {
+  constructor(model, year) {
+    super(model, year)
+  }
+}
+
+class Toyota extends Car {
+  constructor(model, year) {
+    super(model, year)
+  }
+}
+
+var myCar = new Car("generic", 2020)
+var myTesla = new Tesla("Model S", 2019)
+var myToyota = new Toyota("Camary", 2014)
+
 
 console.log(myCar);
 console.log(myCar.howManyWheels());
+console.log(myTesla);
+console.log(myTesla.howManyWheels());
+console.log(myToyota);
+console.log(myToyota.howManyWheels());
