@@ -71,3 +71,13 @@
 // console.log(cylinder1.cylinderVolume());
 // console.log(cylinder2.cylinderVolume());
 // console.log(cylinder3.cylinderVolume());
+
+//SPREAD CHALLENGES
+//#1
+function combineArrays(arrOne, arrTwo) {
+  return [...arrOne, ...arrTwo]
+}
+
+console.log(combineArrays([2, 4, 2], [4, 6, 11]))
+
+
