@@ -52,3 +52,4 @@ const letterString = (arr) => {
 // }
 // //Return the new array in console
 // console.log(newArray(arr1, arr2));
+
