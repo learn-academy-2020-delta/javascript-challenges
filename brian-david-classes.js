@@ -75,15 +75,89 @@
 
 //SPREAD CHALLENGES
 //#1
-function combineArrays(arrOne, arrTwo) {
-  return [...arrOne, ...arrTwo]
-}
-console.log(combineArrays([2, 4, 2], [4, 6, 11]))
+// function combineArrays(arrOne, arrTwo) {
+//   return [...arrOne, ...arrTwo]
+// }
+
+// console.log(combineArrays([2, 4, 2], [4, 6, 11]))
+
 
 //#2
-function combineAndFilterOdd(arrOne, arrTwo, arrThree){
-  return arrOne.concat(arrTwo).concat(arrThree).filter(num => num % 2 !== 0)
-}
+// function combineAndFilterOdd(arrOne, arrTwo, arrThree){
+//   return[...arrOne, ...arrTwo, ...arrThree].filter(num => num % 2 !== 0)
+// }
 
-console.log(combineAndFilterOdd([3, 2, 5], [5, 8, 7], [4, 5, 6]))
+// console.log(combineAndFilterOdd([3, 2, 5], [5, 8, 7], [4, 5, 6]))
 
+
+// //#3 STRETCH
+// function combineAndFilterOdd(...arrays){
+//   return [].concat(...arrays).filter(num => num % 2 !== 0)
+// }
+//
+// console.log(combineAndFilterOdd([3, 2, 5], [5, 8, 7], [4, 5, 6]))
+
+//String Interpolation
+// //#1
+// var meaningOfLife = 42
+//
+// console.log(`The answer to the meaning of life is ${meaningOfLife}`);
+
+//#2
+// var zooAnimals = ['giraffe', 'fennec fox', 'elephant']
+//
+// zooAnimals.forEach(animal =>  console.log(`The zoo has a ${animal}`))
+
+//#3
+//
+// var burger = {
+//     cheese: 'cheddar',
+//     patty: 'black bean',
+//     onions: false,
+// }
+//
+// console.log(`${burger.patty} burger with ${burger.cheese}`);
+
+// //STRETCH
+//
+// var beanBurger = {
+//     cheese: 'cheddar',
+//     patty: 'black bean',
+//     onions: false,
+// }
+//
+// var turkeyBurger = {
+//     cheese: 'swiss',
+//     patty: 'turkey',
+//     onions: true,
+// }
+//
+// const describeBurger = (burger) => {
+//   if (burger.onions === true) {
+//     return console.log(`${burger.patty} burger with ${burger.cheese} and onions`);
+//   } else {
+//     return console.log(`${burger.patty} burger with ${burger.cheese} and no onions`);
+//   }
+// }
+//
+// describeBurger(beanBurger)
+// describeBurger(turkeyBurger)
+
+//Ternary Operators
+//#1
+//
+// const oldEnough = (age) => {
+//   return age >= 18 ? `They are ${age}, they are old enough to vote!` : `They are ${age}, they are too young to vote!`
+// }
+//
+// console.log(oldEnough(18));
+// console.log(oldEnough(17));
+
+//#2
+// const oddOrEven = (array) => {
+//   let whatever = [...array]
+//   return whatever.map(value => value % 2 === 0 ? "even" : "odd")
+// }
+//
+//testArray = [1, 2, 3, 4]
+// console.log(oddOrEven(testArray));

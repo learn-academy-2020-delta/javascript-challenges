@@ -20,14 +20,16 @@
 //   }
 //   console.log(product.describeProduct());
 
-var lunch = {
-    name: "PB and Banana",
-    type: "sandwich",
-    ingredients: ["bread", "peanut butter", "banana"],
-    sandIngredients: function (lunch) {
-        return `The ingredients for ${this.name} ${this.type} are ${this.ingredients}.`
-    }
-  }
-  //console.log(lunch.ingredients)
-  //console.log(lunch.ingredients[2])
-  console.log(lunch.sandIngredients())
+// var lunch = {
+//     name: "PB and Banana",
+//     type: "sandwich",
+//     ingredients: ["bread", "peanut butter", "banana"],
+//     sandIngredients: function (lunch) {
+//         return `The ingredients for ${this.name} ${this.type} are ${this.ingredients}.`
+//     }
+//   }
+//   //console.log(lunch.ingredients)
+//   //console.log(lunch.ingredients[2])
+//   console.log(lunch.sandIngredients())
+
+

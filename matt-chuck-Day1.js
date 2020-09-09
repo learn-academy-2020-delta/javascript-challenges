@@ -74,3 +74,15 @@ if (number === 0) {
 } else {
     console.log("Odd")
 }
+
+//Array Challenges
+var groceryList = ["chips", "dip", "cookies"]
+var granola = ["granola"]
+groceryList.push("soda");
+var combined = groceryList.concat(granola);
+console.log(combined)
+
+var numbers = [2, 4, 6, 8, 10]
+numbers.unshift(0);
+numbers.push(12);
+numbers.shift();
