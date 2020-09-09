@@ -89,12 +89,12 @@
 // console.log(combineAndFilterOdd([3, 2, 5], [5, 8, 7], [4, 5, 6]))
 
 
-//#3 STRETCH
-function combineAndFilterOdd(...arrays){
-  return [].concat(...arrays).filter(num => num % 2 !== 0)
-}
-
-console.log(combineAndFilterOdd([3, 2, 5], [5, 8, 7], [4, 5, 6]))
+// //#3 STRETCH
+// function combineAndFilterOdd(...arrays){
+//   return [].concat(...arrays).filter(num => num % 2 !== 0)
+// }
+//
+// console.log(combineAndFilterOdd([3, 2, 5], [5, 8, 7], [4, 5, 6]))
 
 //String Interpolation
 // //#1
